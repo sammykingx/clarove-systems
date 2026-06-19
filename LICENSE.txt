@@ -1,0 +1,8 @@
+Copyright (c) 2026 Clarové Systems Limited. All rights reserved.
+
+This software and associated documentation files are proprietary and confidential. 
+Unauthorized copying, cloning, modification, distribution, or use of this file, 
+via any medium, is strictly prohibited.
+
+No permission is granted to use, copy, modify, merge, publish, distribute, 
+sublicense, and/or sell copies of this Software.
