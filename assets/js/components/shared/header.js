@@ -19,7 +19,7 @@ export class AppHeader extends BaseComponent {
                                         <img src="/assets/images/clarove-favicon.png" alt="Clarove Hexagon Logo Icon" class="h-full w-full object-contain" />
                                     </div>
                                     <div class="flex flex-col">
-                                        <span class="font-display text-xl font-semibold tracking-tight text-brand-dark transition-colors duration-300 group-hover:text-brand-gold">Clarove</span>
+                                        <span class="font-display text-xl font-semibold tracking-tight text-brand-dark transition-colors duration-300 group-hover:text-brand-gold">Clar<span class="text-brand-gold">ove</span></span>
                                         <span class="text-[10px] uppercase tracking-widest text-brand-dark/60 group-hover:text-brand-dark -mt-1">Systems Limited</span>
                                     </div>
                                 </a>
@@ -47,7 +47,7 @@ export class AppHeader extends BaseComponent {
                                 </a>
                             </nav>
                             <div class="hidden md:flex items-center gap-4">
-                                <a href="#contact" class="inline-flex items-center justify-center bg-brand-dark px-5 py-2.5 font-display text-sm font-semibold text-brand-light transition-all duration-300 hover:bg-brand-green-muted shadow-sm hover:shadow-md hover:-translate-y-0.5 rounded-sm">
+                                <a href="#contact" class="inline-flex items-center justify-center bg-brand-forest-green px-5 py-2.5 font-display text-sm font-semibold text-brand-light transition-all duration-300 hover:bg-brand-green-muted shadow-sm hover:shadow-md hover:-translate-y-0.5 rounded-sm">
                                 Get Started
                                 </a>
                             </div>

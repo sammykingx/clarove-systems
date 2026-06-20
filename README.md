@@ -2,6 +2,8 @@
 
 This project is a modern, responsive landing page for **Clarove Systems Limited** — a software and digital solutions company focused on building reliable, scalable, and high-performance platforms for businesses.
 
+![Clarove Systems mockup](/assets/images/mockups/clarove-mk-1.jpeg)
+
 ## What the project is about
 
 The website is designed to:
@@ -24,6 +26,12 @@ The site acts as a professional online presence for the company, helping potenti
 - strong branding and visual hierarchy
 - call-to-action sections for portfolio and consultation requests
 - lightweight static site setup with Tailwind-based styling
+
+## Mockup
+
+![Clarove Systems mockup](/assets/images/mockups/clarove-mk-3.jpeg)
+
+![Clarove Systems mockup](/assets/images/mockups/clarove-mk-2.jpeg)
 
 ## Tech stack
 

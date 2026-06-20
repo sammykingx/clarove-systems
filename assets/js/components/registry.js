@@ -1,6 +1,7 @@
 import { AppHeader } from "./shared/header.js";
+import { AppFooter } from "./shared/footer.js";
 
 
 export const componentRegistry = new Map([
-    ['app-header', AppHeader],
+    ['app-header', AppHeader], ['app-footer', AppFooter],
 ]);
