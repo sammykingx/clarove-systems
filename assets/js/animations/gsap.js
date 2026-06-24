@@ -1,2 +1,5 @@
-// import and register gsap pluggins
-// export the gsap object
+const { gsap, ScrollTrigger } = window;
+
+gsap.registerPlugin(ScrollTrigger);
+
+export { gsap, ScrollTrigger };
