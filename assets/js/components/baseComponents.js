@@ -1,3 +1,6 @@
+import { applyGSAPAnimations } from "../animations/registry.js";
+
+
 export class BaseComponent extends HTMLElement{
     constructor() {
         super();
@@ -5,7 +8,6 @@ export class BaseComponent extends HTMLElement{
 
     render(html) {
         this.innerHTML = html;
-
-        // any other animations;
+        applyGSAPAnimations(this);
     }
 }
