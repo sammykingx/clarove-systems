@@ -2,6 +2,9 @@ import { BaseComponent } from "../baseComponents.js";
 
 export class PageMeta extends BaseComponent {
 
+    /**
+     * The browser calls this once by default during registration to know which attributes to watch
+    */
     static get observedAttributes() {
         return ["title", "description", "url", "og-image", "og-type", "schema"];
     }
@@ -84,7 +87,7 @@ export class PageMeta extends BaseComponent {
             "name": "Clarove Systems Limited",
             "alternateName": "Clarove Systems",
             "url": "https://clarovesystems.com",
-            //"logo": "https://clarovesystems.com/assets/images/clarove-favicon.png",
+            "logo": "https://clarovesystems.com/assets/images/clarove-favicon.png",
             "description": description,
             "slogan": "Clearly crafted. Precisely built.",
             "foundingDate": "2026",

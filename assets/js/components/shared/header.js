@@ -29,15 +29,12 @@ export class AppHeader extends BaseComponent {
                                     <span>Home</span>
                                     <span class="absolute bottom-0 left-0 w-full h-0.5 bg-brand-gold transform scale-x-100 transition-transform duration-300 origin-left"></span>
                                 </a>
-                                <a href="#about" class="group font-display text-sm font-semibold text-brand-dark/60 hover:text-brand-dark transition-colors duration-300 relative py-1">
+                                <a href="/about" class="group font-display text-sm font-semibold text-brand-dark/60 hover:text-brand-dark transition-colors duration-300 relative py-1">
                                     <span>About Us</span>
                                     <span class="absolute bottom-0 left-0 w-full h-0.5 bg-brand-gold transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
                                 </a>
-                                <a href="#services" class="group font-display text-sm font-semibold text-brand-dark/60 hover:text-brand-dark transition-colors duration-300 relative py-1">
-                                    <span>Services</span>
-                                    <span class="absolute bottom-0 left-0 w-full h-0.5 bg-brand-gold transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
-                                </a>
-                                <a href="#solutions" class="group font-display text-sm font-semibold text-brand-dark/60 hover:text-brand-dark transition-colors duration-300 relative py-1">
+                                
+                                <a href="/solutions" class="group font-display text-sm font-semibold text-brand-dark/60 hover:text-brand-dark transition-colors duration-300 relative py-1">
                                     <span>Solutions</span>
                                     <span class="absolute bottom-0 left-0 w-full h-0.5 bg-brand-gold transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
                                 </a>
@@ -123,15 +120,12 @@ export class AppHeader extends BaseComponent {
                                     <span class="group-hover:text-brand-gold transition-colors duration-200">Home</span>
                                     <span class="text-brand-gold opacity-0 transform -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-200">&rarr;</span>
                                 </a>
-                                <a href="#about" @click="mobileMenuOpen = false" class="group flex items-center justify-between rounded-sm px-3 py-2.5 text-base font-semibold font-display text-brand-dark/70 hover:bg-brand-dark/5 transition-all duration-200">
+                                <a href="/about" @click="mobileMenuOpen = false" class="group flex items-center justify-between rounded-sm px-3 py-2.5 text-base font-semibold font-display text-brand-dark/70 hover:bg-brand-dark/5 transition-all duration-200">
                                     <span class="group-hover:text-brand-dark transition-colors duration-200">About Us</span>
                                     <span class="text-brand-dark opacity-0 transform -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-200">&rarr;</span>
                                 </a>
-                                <a href="#services" @click="mobileMenuOpen = false" class="group flex items-center justify-between rounded-sm px-3 py-2.5 text-base font-semibold font-display text-brand-dark/70 hover:bg-brand-dark/5 transition-all duration-200">
-                                    <span class="group-hover:text-brand-dark transition-colors duration-200">Services</span>
-                                    <span class="text-brand-dark opacity-0 transform -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-200">&rarr;</span>
-                                </a>
-                                <a href="#solutions" @click="mobileMenuOpen = false" class="group flex items-center justify-between rounded-sm px-3 py-2.5 text-base font-semibold font-display text-brand-dark/70 hover:bg-brand-dark/5 transition-all duration-200">
+                                
+                                <a href="/solutions" @click="mobileMenuOpen = false" class="group flex items-center justify-between rounded-sm px-3 py-2.5 text-base font-semibold font-display text-brand-dark/70 hover:bg-brand-dark/5 transition-all duration-200">
                                     <span class="group-hover:text-brand-dark transition-colors duration-200">Solutions</span>
                                     <span class="text-brand-dark opacity-0 transform -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-200">&rarr;</span>
                                 </a>

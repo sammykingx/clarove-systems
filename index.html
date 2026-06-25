@@ -7,6 +7,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link rel="stylesheet" href="/assets/css/style.css">
         <link rel="apple-touch-icon" sizes="57x57" href="/assets/images/favicon/apple-icon-57x57.png">
         <link rel="apple-touch-icon" sizes="60x60" href="/assets/images/favicon/apple-icon-60x60.png">
@@ -186,7 +187,7 @@
             <!-- Header Block: Sophisticated Typography & Navigation Instructions -->
             <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mb-16">
                 <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
-                    <div class="space-y-4">
+                    <div data-aos="fade-up" data-aos-duration="1000" data-aos-easing="cubic-bezier(0.16, 1, 0.3, 1)" class="space-y-4">
                         <div class="inline-flex items-center gap-2 tracking-[0.2em]">
                             <span class="w-1 h-1 bg-brand-gold rounded-full"></span>
                             <span class="font-mono text-[10px] uppercase font-medium text-brand-dark/40">Service catalog</span>
@@ -326,7 +327,6 @@
             </div>
         </section>
 
-        <!-- TESTIMONIAL MATRIX: High-End Mixed-Media Proof Stage -->
         <!-- TESTIMONIAL MATRIX: High-End Circular Proof Wheel & Case Stage -->
         <section id="proof" class="relative bg-brand-dark text-brand-light/90 pt-32 pb-28 overflow-hidden border-t border-brand-light/10">
             
@@ -346,14 +346,14 @@
                 
                 <!-- Header Block: Sophisticated Typography -->
                 <div class="max-w-3xl space-y-4 text-center lg:text-left">
-                    <div class="inline-flex items-center gap-3 tracking-[0.25em]">
+                    <div data-aos="fade-up" data-aos-duration="800" data-aos-easing="cubic-bezier(0.16, 1, 0.3, 1)" class="inline-flex items-center gap-3 tracking-[0.25em]">
                         <span class="flex h-1.5 w-1.5 relative">
                             <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-gold opacity-75"></span>
                             <span class="relative inline-flex rounded-full h-1.5 w-1.5 bg-brand-gold"></span>
                         </span>
                         <span class="font-mono text-[10px] uppercase font-medium text-brand-gold">// Client Stories</span>
                     </div>
-                    <h2 class="font-display text-3xl sm:text-4xl md:text-5xl font-black tracking-tight text-brand-light leading-tight">
+                    <h2 data-aos="fade-up" data-aos-delay="150" data-aos-duration="1000" data-aos-easing="cubic-bezier(0.16, 1, 0.3, 1)" class="font-display text-3xl sm:text-4xl md:text-5xl font-black tracking-tight text-brand-light leading-tight">
                         Stories of clarity, scale, <br class="hidden sm:inline" />
                         and absolute <span class="font-serif italic font-normal text-brand-gold">peace of mind.</span>
                     </h2>
@@ -362,9 +362,9 @@
                 <!-- CORE CONTENT LAYOUT MATRIX -->
                 <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-8 items-center">
                     
-                    <!-- LEFT AREA: Responsive Circular Image Gallery Wheel (Spans 7 Columns) -->
+                    <!-- LEFT AREA: Responsive Circular Image -->
                     <div class="lg:col-span-7 flex flex-col items-center justify-center relative min-h-112">
-                        <span class="font-mono text-[9px] uppercase tracking-wider text-brand-light/40 absolute top-0 left-0">// MATRIX_NODE_01: interface_wheel</span>
+                        <!-- <span class="font-mono text-[9px] uppercase tracking-wider text-brand-light/40 absolute top-0 left-0">// MATRIX_NODE_01: interface_wheel</span> -->
                         
                         <!-- The Gallery Orbit Track -->
                         <div class="relative w-70 h-70 sm:w-95 sm:h-95 rounded-full border border-brand-light/10 flex items-center justify-center animate-[spin_80s_linear_infinite] hover:[animation-play-state:paused]">
@@ -409,14 +409,16 @@
                             <span class="font-display text-xs font-bold text-brand-light tracking-tight mt-1">Clients in 4 countries</span>
                             <div class="w-4 h-px bg-brand-light/20 mt-2"></div>
                         </div>
+                        
                     </div>
 
                     <!-- RIGHT AREA: Stacked Text & Screenshot Metrics (Spans 5 Columns) -->
-                    <div class="lg:col-span-5 space-y-8 lg:pl-8 lg:border-l lg:border-brand-light/5">
-                        
-                        <!-- CARD A: Text-Based Luxury Testimonial Block -->
-                        <div class="space-y-6">
-                            <span class="font-mono text-[9px] uppercase tracking-wider text-brand-light/40 block">// Lagos · NG</span>
+                    <div class="lg:col-span-5 space-y-10 lg:pl-8 lg:border-l lg:border-brand-light/5">
+                        <div data-aos="fade-up" data-aos-duration="1000" data-aos-easing="cubic-bezier(0.16, 1, 0.3, 1)" class="space-y-6">
+                            <div class="flex items-center justify-between font-mono text-[9px] uppercase tracking-wider text-brand-light/40">
+                                <span>// WEBSITE DEV</span>
+                                <span class="text-brand-gold">Satisfied Client</span>
+                            </div>
                             
                             <div class="space-y-4">
                                 <p class="font-display text-lg font-light leading-relaxed text-brand-light">
@@ -424,7 +426,7 @@
                                 </p>
                                 <div>
                                     <p class="font-mono text-xs font-bold text-brand-gold">Amara Okafor</p>
-                                    <p class="font-mono text-[10px] text-brand-light/40 uppercase tracking-wider mt-0.5">Founder, VendaMarket</p>
+                                    <p class="font-mono text-[10px] text-brand-light/40 uppercase tracking-wider mt-0.5">Lagos · NG</p>
                                 </div>
                             </div>
                         </div>
@@ -432,35 +434,23 @@
                         <!-- Separator Line -->
                         <div class="h-px w-full bg-brand-light/5"></div>
 
-                        <!-- CARD B: Branded Visual Screenshot Frame Container -->
-                        <div class="space-y-4">
-                            <span class="font-mono text-[9px] uppercase tracking-wider text-brand-light/40 block">// CLIENT_REVIEW_FEEDBACK</span>
-                            
-                            <!-- Screenshot Core Block Structure -->
-                            <div class="bg-brand-light p-4 rounded-xl shadow-2xl border border-brand-dark/5 space-y-4 text-brand-dark max-w-md">
-                                <!-- Browser-style header controls -->
-                                <div class="flex items-center justify-between border-b border-brand-dark/5 pb-2.5">
-                                    <div class="flex items-center gap-1.5">
-                                        <span class="w-1.5 h-1.5 rounded-full bg-brand-dark/20"></span>
-                                        <span class="w-1.5 h-1.5 rounded-full bg-brand-dark/20"></span>
-                                        <span class="w-1.5 h-1.5 rounded-full bg-brand-dark/20"></span>
-                                    </div>
-                                    <span class="font-mono text-[9px] text-brand-dark/30 tracking-tight">Client Review</span>
-                                </div>
-
-                                <!-- Real Image Asset Container with fine detailing -->
-                                <div class="relative w-full overflow-hidden rounded-lg border border-brand-dark/5 bg-brand-dark/5 aspect-4/3 sm:aspect-video">
+                        <!-- CARD B: Ambient Review Capture Frame -->
+                        <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="1200" data-aos-easing="cubic-bezier(0.16, 1, 0.3, 1)" class="space-y-4">
+                            <span class="font-mono text-[9px] uppercase tracking-wider text-brand-light/40 block max-w-md mx-auto lg:mx-0">// More from satistifed clients</span>
+                            <div class="relative w-full rounded-2xl overflow-hidden border border-brand-light/10 bg-brand-dark/40 p-2 shadow-2xl transition-all duration-500 hover:border-brand-gold/30 group max-w-md mx-auto lg:mx-0">
+                                <div class="absolute inset-0 bg-linear-to-tr from-transparent via-white/[0.02] to-transparent pointer-events-none"></div>
+                                <div class="relative w-full rounded-xl overflow-hidden bg-black/20">
                                     <img 
-                                        src="/assets/images/review.png" 
-                                        alt="Verified client review" 
-                                        class="w-full h-full object-cover object-center"
+                                        src="/assets/images/reviews-2.jpg" 
+                                        alt="Verified client reviews from Tobi Ogundipe and Nnamdi Okoye on Clarove Systems" 
+                                        class="w-full h-auto block object-contain select-none transition-transform duration-700 ease-out group-hover:scale-[1.02]"
                                         loading="lazy"
                                     />
                                 </div>
                             </div>
                             
-                            <p class="font-mono text-[10px] text-brand-light/40 leading-relaxed">
-                                * A snapshot from a real client project handover. This is how we close every build.
+                            <p class="font-mono text-[10px] text-brand-light/30 leading-relaxed text-center lg:text-left">
+                                * Real feedbacks from projects we've delivered. What you see is exactly what our clients got.
                             </p>
                         </div>
 
@@ -470,13 +460,11 @@
             </div>
         </section>
 
-        <!-- HIGHLIGHTED PORTFOLIO: Premium Horizontal Case-Study Stream -->
+        <!-- HIGHLIGHTED PORTFOLIO -->
         <section id="portfolio" class="bg-brand-light text-brand-dark pt-32 pb-24 overflow-hidden relative border-t border-brand-dark/5">
-            
-            <!-- Section Header Matrix -->
             <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mb-16">
                 <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
-                    <div class="space-y-4">
+                    <div data-aos="fade-up" data-aos-duration="1000" data-aos-easing="cubic-bezier(0.16, 1, 0.3, 1)" class="space-y-4">
                         <div class="inline-flex items-center gap-2 tracking-[0.2em]">
                             <span class="w-1 h-1 bg-brand-gold rounded-full"></span>
                             <span class="font-mono text-[10px] uppercase font-medium text-brand-dark/40">// OUR WORK</span>
@@ -493,20 +481,17 @@
                 </div>
             </div>
 
-            <!-- HORIZONTAL TRACK CANVAS (No Scrollbars, Snap Aligned) -->
-            <div class="w-full overflow-x-auto flex gap-8 px-4 sm:px-6 lg:px-8 pb-12 no-scrollbar snap-x snap-mandatory scroll-smooth relative z-10">
+            <!-- HORIZONTAL TRACK CANVAS -->
+            <div class="js-h-track w-full overflow-x-auto flex gap-8 px-4 sm:px-6 lg:px-8 pb-12 no-scrollbar snap-x snap-mandatory scroll-smooth relative z-10">
                 
-                <!-- CASE STUDY 1: Enterprise Marketplace Platform -->
+                <!-- CASE STUDY 1 -->
                 <div class="snap-start shrink-0 w-[320px] sm:w-130 md:w-160 bg-brand-dark text-brand-light p-6 sm:p-10 flex flex-col justify-between border border-brand-dark shadow-2xl rounded-none min-h-130 relative overflow-hidden group">
                     <div class="absolute inset-0 bg-microgrid opacity-5 pointer-events-none"></div>
-                    
-                    <!-- Project Header Meta -->
                     <div class="flex items-center justify-between font-mono text-[9px] tracking-widest text-brand-gold/60 border-b border-brand-light/10 pb-6 mb-8">
                         <span>[ CORE_BUILD_01 ]</span>
                         <span class="text-green-400">● Live & Running</span>
                     </div>
 
-                    <!-- Deep Architectural Content Layout -->
                     <div class="space-y-6">
                         <div class="space-y-2">
                             <span class="font-mono text-[10px] uppercase tracking-widest text-brand-light/40 block">VendaMarket Global</span>
@@ -650,6 +635,8 @@
         <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.15.2/dist/cdn.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollTrigger.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script type="module" src="/assets/js/main.js"></script>
+
     </body>
 </html>

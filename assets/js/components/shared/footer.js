@@ -6,7 +6,7 @@ export class AppFooter extends BaseComponent {
         const year = new Date().getFullYear();
 
         this.render(
-            `<footer class="relative bg-brand-dark text-brand-light/80 pt-28 pb-12 overflow-hidden border-t border-brand-light/10">
+            `<footer data-aos="fade" data-aos-duration="1400" data-aos-anchor-placement="top-bottom" class="relative bg-brand-dark text-brand-light/80 pt-28 pb-12 overflow-hidden border-t border-brand-light/10">
                 <div class="absolute inset-0 z-0 select-none pointer-events-none mix-blend-luminosity">
                     <img 
                         src="/assets/images/team-congratulations.jpg" 

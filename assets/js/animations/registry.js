@@ -46,7 +46,6 @@ const elementRegistry = new Map([
 // Main entry point — called by BaseComponent after every render()
 // ---------------------------------------------------------------------------
 export function applyGSAPAnimations(root) {
-    // 1. Check if this component root matches a scene
     sceneRegistry.forEach((sceneFn, selector) => {
         if (root.matches(selector) || root.querySelector(selector)) {
             const target = root.matches(selector) ? root : root.querySelector(selector);
@@ -54,8 +53,6 @@ export function applyGSAPAnimations(root) {
         }
     });
 
-
-    // 2. Run per-element animations for any data-animate elements inside
     elementRegistry.forEach((animFn, selector) => {
         root.querySelectorAll(selector).forEach(el => animFn(el));
     });
