@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Clarove Systems Limited | Clearly crafted. precisely built</title>
+        <title>Clarove Systems Limited</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
@@ -25,13 +25,18 @@
         <meta name="msapplication-config" content="/browserconfig.xml" />
         <meta name="msapplication-TileColor" content="#F5F8F5">
         <meta name="msapplication-TileImage" content="/assets/images/favicon/ms-icon-144x144.png">
+        <page-meta
+            title="Clarove Systems Limited | Web & App Development for Business Owners"
+            description="We turn your idea into a launched product — websites, web apps, SaaS platforms, and marketplaces. Fixed pricing, full transparency, delivered on schedule."
+            url="https://clarovesystems.com/"
+            og-image="https://clarovesystems.com/assets/images/og-image.jpg"
+        ></page-meta>
     </head>
     <body class="bg-brand-light bg-microgrid antialiased selection:bg-brand-gold selection:text-brand-dark">
         <app-header></app-header>
         
         <!-- HERO AREA -->
-        <section class="js-hero relative min-h-screen pt-18 pb-14 lg:pt-24 lg:pb-22 overflow-hidden bg-brand-light bg-microgrid flex items-center">
-            <!-- Subtle Ambient Glow Background Orbs -->
+        <section class="js-hero relative min-h-screen pt-18 pb-20 lg:pt-24 lg:pb-28 overflow-hidden bg-brand-light bg-microgrid flex items-center">
             <div id="orb-1" class="absolute top-1/4 left-1/12 -translate-y-1/2 w-96 h-96 rounded-full bg-brand-green-muted/5 blur-3xl pointer-events-none opacity-0"></div>
             <div id="orb-2" class="absolute bottom-10 right-1/12 w-lg h-128 rounded-full bg-brand-gold/5 blur-3xl pointer-events-none opacity-0"></div>
             
@@ -40,7 +45,6 @@
                     
                     <!-- LEFT COLUMN -->
                     <div class="lg:col-span-7 space-y-7 text-center lg:text-left">
-                        <!-- Badge -->
                         <div class="js-hero-badge opacity-0 inline-flex items-center gap-3 bg-brand-light/40 backdrop-blur-md px-3.5 py-1 rounded-full border border-brand-dark/10 shadow-[0_2px_8px_rgba(0,0,0,0.02)]">
                             <span class="flex h-1.5 w-1.5 relative">
                                 <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-gold/60 opacity-100"></span>
@@ -51,7 +55,6 @@
                             </span>
                         </div>
                         
-                        <!-- Main Heading Split by Lines for cinematic reveal -->
                         <h1 class="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light tracking-tight text-brand-dark leading-[1.2]">
                             <span class="block overflow-hidden">
                                 <span class="js-line block opacity-0">Your vision,</span>
@@ -74,12 +77,10 @@
                             </span>
                         </h1>
 
-                        <!-- Paragraph description -->
                         <p class="js-hero-body opacity-0 max-w-xl mx-auto lg:mx-0 font-body font-light text-sm sm:text-lg text-brand-dark/75 leading-relaxed tracking-wide mt-6">
                             From websites and apps to SaaS platforms and marketplaces, we turn your idea into a launched product with <span class="font-medium text-brand-dark">full transparency</span>, giving you total <span class="font-medium text-brand-dark">peace of mind</span>.
                         </p>
 
-                        <!-- CTAs -->
                         <div class="js-hero-body opacity-0 flex flex-row flex-wrap max-w-lg items-center justify-center lg:justify-start gap-4 pt-2 mx-auto lg:mx-0">
                             <a href="#projects" class="w-auto inline-flex items-center justify-center bg-brand-green-muted text-brand-light px-4 sm:px-8 py-3.5 sm:py-4 font-display text-xs sm:text-base lg:text-lg font-semibold shadow-lg hover:bg-brand-green-muted hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300 rounded-sm group">
                                 See Portfolio
@@ -92,7 +93,6 @@
                             </a>
                         </div>
 
-                        <!-- Hard Metrics -->
                         <div class="js-hero-body opacity-0 pt-6 border-t border-brand-dark/10 flex flex-wrap items-center justify-center lg:justify-start gap-x-8 gap-y-4">
                             <div>
                                 <p class="font-display text-xs font-semibold uppercase tracking-wider text-brand-dark/40">Projects Delivered In Nigeria</p>
@@ -108,11 +108,8 @@
                     
                     <!-- RIGHT COLUMN (Visual Graphic Area) -->
                     <div class="lg:col-span-5 relative mt-15 lg:mt-0 flex justify-center items-center w-full min-h-145 lg:min-h-165">
-                        <!-- Background visual aura -->
                         <div id="hero-image-bg" class="absolute w-[120%] h-[120%] bg-linear-to-tr from-brand-green-muted/20 via-brand-gold/15 to-transparent blur-3xl rounded-full scale-90 pointer-events-none z-0 opacity-0"></div>
-                        
-                        <!-- Main Visual Card Frame -->
-                        <div id="hero-main-card" class="relative w-full max-w-120 aspect-4/5 bg-brand-dark rounded-2xl shadow-2xl overflow-hidden border border-brand-gold/20 group opacity-0">
+                        <div id="hero-main-card" class="relative w-full max-w-120 aspect-4/5 bg-brand-dark rounded-2xl shadow-2xl overflow-hidden border border-brand-gold group opacity-0">
                             <div class="absolute inset-0 bg-microgrid-dark opacity-10 pointer-events-none"></div>
                             <img 
                                 src="/assets/images/relaxed-happy-business-owners.png" 
@@ -208,11 +205,7 @@
             </div>
 
             <!-- HORIZONTAL SCROLL CANVAS (Uses utility styles to strip standard scrollbar look) -->
-            <!-- Add this CSS chunk to your global sheet for smooth experience: 
-                .no-scrollbar::-webkit-scrollbar { display: none; } 
-                .no-scrollbar { -ms-overflow-style: none; scroll-bar-width: none; } 
-            -->
-            <div class="w-full overflow-x-auto flex gap-6 px-4 sm:px-6 lg:px-8 pb-8 no-scrollbar snap-x snap-mandatory scroll-smooth relative z-10">
+            <div class="js-h-track w-full overflow-x-auto flex gap-6 px-4 sm:px-6 lg:px-8 pb-8 no-scrollbar snap-x snap-mandatory scroll-smooth relative z-10">
                 
                 <!-- CARD 1: Website -->
                 <div class="snap-start shrink-0 w-75 sm:w-90 bg-brand-dark text-brand-light p-8 flex flex-col justify-between border border-brand-dark rounded-none shadow-xl min-h-95 group relative overflow-hidden">
@@ -334,6 +327,7 @@
         </section>
 
         <!-- TESTIMONIAL MATRIX: High-End Mixed-Media Proof Stage -->
+        <!-- TESTIMONIAL MATRIX: High-End Circular Proof Wheel & Case Stage -->
         <section id="proof" class="relative bg-brand-dark text-brand-light/90 pt-32 pb-28 overflow-hidden border-t border-brand-light/10">
             
             <!-- BACKGROUND LAYER: Fixed High-End Luminous Image Blend -->
@@ -357,7 +351,7 @@
                             <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-gold opacity-75"></span>
                             <span class="relative inline-flex rounded-full h-1.5 w-1.5 bg-brand-gold"></span>
                         </span>
-                        <span class="font-mono text-[10px] uppercase font-medium text-brand-gold">// VERIFIED_CASE_VALIDATION</span>
+                        <span class="font-mono text-[10px] uppercase font-medium text-brand-gold">// Client Stories</span>
                     </div>
                     <h2 class="font-display text-3xl sm:text-4xl md:text-5xl font-black tracking-tight text-brand-light leading-tight">
                         Stories of clarity, scale, <br class="hidden sm:inline" />
@@ -366,41 +360,55 @@
                 </div>
 
                 <!-- CORE CONTENT LAYOUT MATRIX -->
-                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-start">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-8 items-center">
                     
-                    <!-- LEFT AREA: High-Fidelity Video Showcase Stage (Spans 7 Columns) -->
-                    <div class="lg:col-span-7 space-y-6">
-                        <span class="font-mono text-[9px] uppercase tracking-wider text-brand-light/40 block">// STREAM_NODE_01: founder_briefing</span>
+                    <!-- LEFT AREA: Responsive Circular Image Gallery Wheel (Spans 7 Columns) -->
+                    <div class="lg:col-span-7 flex flex-col items-center justify-center relative min-h-112">
+                        <span class="font-mono text-[9px] uppercase tracking-wider text-brand-light/40 absolute top-0 left-0">// MATRIX_NODE_01: interface_wheel</span>
                         
-                        <!-- Video Container Card -->
-                        <div class="relative w-full aspect-video bg-black/40 border border-brand-light/10 rounded-none shadow-2xl overflow-hidden group">
+                        <!-- The Gallery Orbit Track -->
+                        <div class="relative w-70 h-70 sm:w-95 sm:h-95 rounded-full border border-brand-light/10 flex items-center justify-center animate-[spin_80s_linear_infinite] hover:[animation-play-state:paused]">
                             
-                            <!-- Simulated Video Cover Thumbnail (Replace with your actual video or video element) -->
-                            <div class="absolute inset-0 z-0 bg-linear-to-t from-brand-dark/80 via-transparent to-transparent group-hover:scale-102 transition-transform duration-700 ease-out">
-                                <!-- Tiny grid overlay inside video player -->
-                                <div class="absolute inset-0 bg-microgrid-dark opacity-20"></div>
+                            <!-- Wheel Item 1: Core Dashboard Asset -->
+                            <div class="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2 group cursor-pointer select-none">
+                                <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-full overflow-hidden border border-brand-light/20 shadow-2xl p-1 bg-brand-dark/80 backdrop-blur-md transition-all duration-300 transform group-hover:scale-110 group-hover:border-brand-gold ring-4 ring-black/20">
+                                    <img src="/assets/images/client-images/client-jason.jpg" alt="Jason ● UK" class="w-full h-full object-cover rounded-full mix-blend-lighten" />
+                                </div>
+                                <span class="absolute -bottom-6 left-1/2 -translate-x-1/2 font-mono text-[8px] bg-brand-dark/90 text-brand-light px-1.5 py-0.5 whitespace-nowrap border border-brand-light/10 tracking-tighter opacity-0 group-hover:opacity-100 transition-opacity duration-300">Jason ● UK</span>
                             </div>
 
-                            <!-- Centered Custom High-End Play Overlay -->
-                            <div class="absolute inset-0 flex items-center justify-center z-10">
-                                <button type="button" aria-label="Play Founder Case Study Video" class="h-16 w-16 bg-brand-light text-brand-dark rounded-full flex items-center justify-center shadow-2xl group-hover:bg-brand-gold group-hover:scale-110 transition-all duration-300">
-                                    <svg class="h-5 w-5 fill-current ml-1" viewBox="0 0 24 24">
-                                        <path d="M8 5v14l11-7z" />
-                                    </svg>
-                                </button>
+                            <!-- Wheel Item 2: Mobile Interface Snapshot -->
+                            <div class="absolute right-0 translate-x-1/2 top-1/2 -translate-y-1/2 group cursor-pointer select-none">
+                                <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-full overflow-hidden border border-brand-light/20 shadow-2xl p-1 bg-brand-dark/80 backdrop-blur-md transition-all duration-300 transform group-hover:scale-110 group-hover:border-brand-gold ring-4 ring-black/20">
+                                    <img src="/assets/images/client-images/client-mitchelle.jpg" alt="Mitchelle ● CA" class="w-full h-full object-cover rounded-full mix-blend-lighten" />
+                                </div>
+                                <span class="absolute -bottom-6 left-1/2 -translate-x-1/2 font-mono text-[8px] bg-brand-dark/90 text-brand-light px-1.5 py-0.5 whitespace-nowrap border border-brand-light/10 tracking-tighter opacity-0 group-hover:opacity-100 transition-opacity duration-300">Mitchelle ● CA</span>
                             </div>
 
-                            <!-- Video Controls Overlay Ribbon -->
-                            <div class="absolute bottom-0 inset-x-0 p-4 bg-linear-to-t from-brand-dark/90 to-transparent flex items-center justify-between text-mono text-[10px] tracking-widest text-brand-light/60 z-10 font-mono">
-                                <span>[ PLAYBACK // LIVE_CASE_01 ]</span>
-                                <span class="text-brand-gold">04:12</span>
+                            <!-- Wheel Item 3: API Architecture Log -->
+                            <div class="absolute bottom-0 translate-y-1/2 left-1/2 -translate-x-1/2 group cursor-pointer select-none">
+                                <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-full overflow-hidden border border-brand-light/20 shadow-2xl p-1 bg-brand-dark/80 backdrop-blur-md transition-all duration-300 transform group-hover:scale-110 group-hover:border-brand-gold ring-4 ring-black/20">
+                                    <img src="/assets/images/client-images/client-mr-bakare.jpg" alt="Mr Bakare ● NG" class="w-full h-full object-cover rounded-full mix-blend-lighten" />
+                                </div>
+                                <span class="absolute -bottom-6 left-1/2 -translate-x-1/2 font-mono text-[8px] bg-brand-dark/90 text-brand-light px-1.5 py-0.5 whitespace-nowrap border border-brand-light/10 tracking-tighter opacity-0 group-hover:opacity-100 transition-opacity duration-300">Mr Bakare ● NG</span>
                             </div>
+
+                            <!-- Wheel Item 4: Database Infrastructure Flow -->
+                            <div class="absolute left-0 -translate-x-1/2 top-1/2 -translate-y-1/2 group cursor-pointer select-none">
+                                <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-full overflow-hidden border border-brand-light/20 shadow-2xl p-1 bg-brand-dark/80 backdrop-blur-md transition-all duration-300 transform group-hover:scale-110 group-hover:border-brand-gold ring-4 ring-black/20">
+                                    <img src="/assets/images/client-images/client-audrey.jpg" alt="Audrey ● US" class="w-full h-full object-cover rounded-full mix-blend-lighten" />
+                                </div>
+                                <span class="absolute -bottom-6 left-1/2 -translate-x-1/2 font-mono text-[8px] bg-brand-dark/90 text-brand-light px-1.5 py-0.5 whitespace-nowrap border border-brand-light/10 tracking-tighter opacity-0 group-hover:opacity-100 transition-opacity duration-300">Audrey ● US</span>
+                            </div>
+
                         </div>
 
-                        <!-- Short Video Context Subtext -->
-                        <p class="font-body text-sm font-light text-brand-light/60 leading-relaxed max-w-xl">
-                            "Clarove took over our platform architecture when we were losing users due to database latency. Within 3 weeks, we saw zero lost momentum and absolute, verified sync."
-                        </p>
+                        <!-- Center Piece: Core Diagnostic Focal Node -->
+                        <div class="absolute inset-0 m-auto w-24 h-24 sm:w-32 sm:h-32 rounded-full border border-brand-gold/20 bg-brand-dark/90 backdrop-blur-xl flex flex-col items-center justify-center p-4 text-center select-none shadow-inner z-10 pointer-events-none">
+                            <span class="font-mono text-[8px] tracking-widest text-brand-gold/60 uppercase">Trusted by</span>
+                            <span class="font-display text-xs font-bold text-brand-light tracking-tight mt-1">Clients in 4 countries</span>
+                            <div class="w-4 h-px bg-brand-light/20 mt-2"></div>
+                        </div>
                     </div>
 
                     <!-- RIGHT AREA: Stacked Text & Screenshot Metrics (Spans 5 Columns) -->
@@ -408,15 +416,15 @@
                         
                         <!-- CARD A: Text-Based Luxury Testimonial Block -->
                         <div class="space-y-6">
-                            <span class="font-mono text-[9px] uppercase tracking-wider text-brand-light/40 block">// INDEX_02: platform_metrics</span>
+                            <span class="font-mono text-[9px] uppercase tracking-wider text-brand-light/40 block">// Lagos · NG</span>
                             
                             <div class="space-y-4">
                                 <p class="font-display text-lg font-light leading-relaxed text-brand-light">
-                                    “The absolute transparency changed how we look at engineering vendors. We knew exactly where every line of code stood, down to fixed budgets.”
+                                    “I was nervous handing this over to someone I'd never met in person. But they kept me updated every step of the way, delivered exactly what we discussed, and the final product looked better than I imagined.”
                                 </p>
                                 <div>
                                     <p class="font-mono text-xs font-bold text-brand-gold">Amara Okafor</p>
-                                    <p class="font-mono text-[10px] text-brand-light/40 uppercase tracking-wider mt-0.5">CTO, VendaMarket Global</p>
+                                    <p class="font-mono text-[10px] text-brand-light/40 uppercase tracking-wider mt-0.5">Founder, VendaMarket</p>
                                 </div>
                             </div>
                         </div>
@@ -426,7 +434,7 @@
 
                         <!-- CARD B: Branded Visual Screenshot Frame Container -->
                         <div class="space-y-4">
-                            <span class="font-mono text-[9px] uppercase tracking-wider text-brand-light/40 block">// RECONCILIATION_PROOF_CAPTURE</span>
+                            <span class="font-mono text-[9px] uppercase tracking-wider text-brand-light/40 block">// CLIENT_REVIEW_FEEDBACK</span>
                             
                             <!-- Screenshot Core Block Structure -->
                             <div class="bg-brand-light p-4 rounded-xl shadow-2xl border border-brand-dark/5 space-y-4 text-brand-dark max-w-md">
@@ -437,24 +445,22 @@
                                         <span class="w-1.5 h-1.5 rounded-full bg-brand-dark/20"></span>
                                         <span class="w-1.5 h-1.5 rounded-full bg-brand-dark/20"></span>
                                     </div>
-                                    <span class="font-mono text-[9px] text-brand-dark/30 tracking-tight">reconciliation_ledger_v2.png</span>
+                                    <span class="font-mono text-[9px] text-brand-dark/30 tracking-tight">Client Review</span>
                                 </div>
 
-                                <!-- Data Screenshot Content Grid Simulation -->
-                                <div class="flex items-center justify-between">
-                                    <div>
-                                        <span class="text-[9px] uppercase tracking-wider text-brand-dark/40 block font-mono">Escrow Balance Secure</span>
-                                        <span class="text-lg font-extrabold font-mono text-brand-dark">$1,420,500.00</span>
-                                    </div>
-                                    <div class="text-right">
-                                        <span class="text-[9px] uppercase tracking-wider text-brand-dark/40 block font-mono">Payout Velocity</span>
-                                        <span class="text-xs font-bold font-mono text-green-600 block mt-1">▲ Instant Sync</span>
-                                    </div>
+                                <!-- Real Image Asset Container with fine detailing -->
+                                <div class="relative w-full overflow-hidden rounded-lg border border-brand-dark/5 bg-brand-dark/5 aspect-4/3 sm:aspect-video">
+                                    <img 
+                                        src="/assets/images/review.png" 
+                                        alt="Verified client review" 
+                                        class="w-full h-full object-cover object-center"
+                                        loading="lazy"
+                                    />
                                 </div>
                             </div>
                             
                             <p class="font-mono text-[10px] text-brand-light/40 leading-relaxed">
-                                * Production environment metric showing complete, seamless asset processing for international deployments.
+                                * A snapshot from a real client project handover. This is how we close every build.
                             </p>
                         </div>
 
@@ -473,15 +479,15 @@
                     <div class="space-y-4">
                         <div class="inline-flex items-center gap-2 tracking-[0.2em]">
                             <span class="w-1 h-1 bg-brand-gold rounded-full"></span>
-                            <span class="font-mono text-[10px] uppercase font-medium text-brand-dark/40">// PRODUCTION_SHIPPED_LOGS</span>
+                            <span class="font-mono text-[10px] uppercase font-medium text-brand-dark/40">// OUR WORK</span>
                         </div>
                         <h2 class="font-display text-3xl sm:text-4xl md:text-5xl font-black tracking-tight text-brand-dark">
-                            Featured Systems.
+                            Projects We're Proud Of.
                         </h2>
                     </div>
                     
                     <div class="font-mono text-[10px] tracking-widest uppercase text-brand-dark/40 flex items-center gap-3 hidden md:flex select-none">
-                        <span>SWIPE_TO_INSPECT_BUILDS</span>
+                        <span>Swipe to explore</span>
                         <span class="animate-pulse font-sans font-bold text-brand-gold">&rarr;</span>
                     </div>
                 </div>
@@ -497,14 +503,14 @@
                     <!-- Project Header Meta -->
                     <div class="flex items-center justify-between font-mono text-[9px] tracking-widest text-brand-gold/60 border-b border-brand-light/10 pb-6 mb-8">
                         <span>[ CORE_BUILD_01 ]</span>
-                        <span class="text-green-400">● LIVE_OPERATIONAL</span>
+                        <span class="text-green-400">● Live & Running</span>
                     </div>
 
                     <!-- Deep Architectural Content Layout -->
                     <div class="space-y-6">
                         <div class="space-y-2">
                             <span class="font-mono text-[10px] uppercase tracking-widest text-brand-light/40 block">VendaMarket Global</span>
-                            <h3 class="font-display text-3xl font-black tracking-tight text-brand-light">
+                            <h3 class="font-display text-2xl font-black tracking-tight text-brand-light">
                                 Cross-Border B2B Commerce Engine
                             </h3>
                         </div>
@@ -514,27 +520,27 @@
                         </p>
 
                         <!-- Granular Tech Audit Matrix for Snooping Clients -->
-                        <div class="pt-4 grid grid-cols-2 sm:grid-cols-3 gap-6 font-mono text-[11px] border-t border-brand-light/5">
-                            <div>
+                        <div class="pt-4 grid grid-cols-2 gap-6 font-mono text-[11px] border-t border-brand-light/5">
+                            <!-- <div>
                                 <span class="text-[9px] text-brand-light/40 block uppercase tracking-wider">// core_stack</span>
                                 <span class="text-brand-light/90 block mt-1">Node.js / React / AWS</span>
-                            </div>
+                            </div> -->
                             <div>
                                 <span class="text-[9px] text-brand-light/40 block uppercase tracking-wider">// peak_volume</span>
-                                <span class="text-brand-gold block mt-1">₦500M+ Processed</span>
+                                <span class="text-brand-gold block mt-1">₦500M+ in sales processed</span>
                             </div>
                             <div class="col-span-2 sm:col-span-1">
-                                <span class="text-[9px] text-brand-light/40 block uppercase tracking-wider">// sync_latency</span>
-                                <span class="text-brand-light/90 block mt-1">0.02ms Webhooks</span>
+                                <span class="text-[9px] text-brand-light/40 block uppercase tracking-wider">// status</span>
+                                <span class="text-brand-light/90 block mt-1">Live across multiple countries</span>
                             </div>
                         </div>
                     </div>
 
                     <!-- Context Link Footer -->
                     <div class="pt-8 mt-8 border-t border-brand-light/10 flex items-center justify-between text-mono text-[10px] tracking-widest font-mono">
-                        <span class="text-brand-light/30">DECOUPLED_ARCHITECTURE</span>
+                        <span class="text-brand-light/30 uppercase">Marketplace · Payments</span>
                         <a href="#case-venda" class="text-brand-gold hover:text-brand-light transition-colors flex items-center gap-1 group/link">
-                            INSPECT_ARCHITECTURE <span class="font-sans transform group-hover/link:translate-x-1 transition-transform">&rarr;</span>
+                            See the project <span class="font-sans transform group-hover/link:translate-x-1 transition-transform">&rarr;</span>
                         </a>
                     </div>
                 </div>
@@ -552,7 +558,7 @@
                     <div class="space-y-6">
                         <div class="space-y-2">
                             <span class="font-mono text-[10px] uppercase tracking-widest text-brand-dark/40 block">Clarove Ledger Vault</span>
-                            <h3 class="font-display text-3xl font-black tracking-tight text-brand-dark">
+                            <h3 class="font-display text-2xl font-black tracking-tight text-brand-dark">
                                 Automated Escrow Reconciliation System
                             </h3>
                         </div>
@@ -601,7 +607,7 @@
                     <div class="space-y-6">
                         <div class="space-y-2">
                             <span class="font-mono text-[10px] uppercase tracking-widest text-brand-light/40 block">HaulageFlow Networks</span>
-                            <h3 class="font-display text-3xl font-black tracking-tight text-brand-light">
+                            <h3 class="font-display text-2xl font-black tracking-tight text-brand-light">
                                 Real-Time Fleet Routing Infrastructure
                             </h3>
                         </div>

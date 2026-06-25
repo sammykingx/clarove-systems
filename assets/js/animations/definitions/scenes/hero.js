@@ -1,9 +1,5 @@
 import { gsap } from "../../gsap.js";
-import { fadeUp, lineReveal, slideIn } from "../primitives/index.js";
-import { scaleEntrance, elasticPop, orbBloom } from "../primitives/index.js";
-import { drawUnderline } from "../primitives/index.js";
-import { idleFloat } from "../primitives/index.js";
-
+import { fadeUp, lineReveal, slideIn, drawUnderline, idleFloat, scaleEntrance, elasticPop, orbBloom } from "../primitives/index.js";
 
 
 export function runHeroScene(root) {

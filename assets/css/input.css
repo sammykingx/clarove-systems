@@ -61,3 +61,14 @@
   0%, 100% { transform: translateY(0) rotate(0deg); }
   50% { transform: translateY(-8px) rotate(1deg); }
 }
+
+/* Hides scrollbar while keeping scroll behaviour intact */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* Prevent the pinned section from collapsing during pin in horizontal scroll
+ * Tell the browser the track will be transformed — enables GPU compositing
+*/
+.js-h-track {
+    will-change: transform;
+}

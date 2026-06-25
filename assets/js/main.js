@@ -1,5 +1,6 @@
 import { App } from "./app.js";
 import { runHeroScene } from "./animations/definitions/scenes/hero.js";
+import { runHorizontalSection } from "./animations/definitions/scenes/horizontalScroll.js";
 
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -10,6 +11,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const hero = document.querySelector(".js-hero");
     if (hero) runHeroScene(hero);
+    runHorizontalSection("#services");
+    runHorizontalSection("#portfolio");
 });
 
 // document.addEventListener("DOMContentLoaded", () => {
