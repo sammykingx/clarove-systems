@@ -1,85 +1,577 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/css/style.css">
-    <link rel="apple-touch-icon" sizes="57x57" href="/assets/images/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/assets/images/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/assets/images/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/assets/images/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/assets/images/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/assets/images/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/assets/images/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/assets/images/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="/assets/images/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/assets/images/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/manifest.webmanifest">
-    <meta name="msapplication-config" content="/browserconfig.xml" />
-    <meta name="msapplication-TileColor" content="#F5F8F5">
-    <meta name="msapplication-TileImage" content="/assets/images/favicon/ms-icon-144x144.png">
-    <page-meta
-        title="About Us | Clarové Systems — Built for Business Owners Who've Been Let Down"
-        description="Clarové Systems was founded for one reason: too many business owners and directors have great ideas but can't find a development partner they can actually trust. We exist to change that."
-        url="https://clarovesystems.com/about/"
-        og-image="https://clarovesystems.com/assets/images/og-about.jpg"
-        schema='{
-            "@context": "https://schema.org",
-            "@type": "AboutPage",
-            "url": "https://clarovesystems.com/about/",
-            "name": "About Clarové Systems Limited",
-            "description": "Clarové Systems was built for non-technical business owners and directors who have a clear vision for their product but struggle to find a development partner who truly understands them. We combine technical precision with genuine business empathy — every project is delivered with full transparency, fixed pricing, and the kind of clarity that lets you sleep at night.",
-            "mainEntity": {
-                "@type": "ProfessionalService",
-                "name": "Clarové Systems Limited",
-                "alternateName": "Clarové Systems",
-                "url": "https://clarovesystems.com",
-                "logo": "https://clarovesystems.com/assets/images/clarove-favicon.png",
-                "slogan": "Clearly crafted. Precisely built.",
-                "foundingDate": "2024",
-                "description": "A software development company built around one belief: that every business owner deserves a technology partner who speaks their language, respects their investment, and delivers exactly what was promised. We work with founders, directors, and business owners across Nigeria, the UK, Canada, and the US — people who have been burned by vague timelines, hidden costs, and developers who disappeared mid-project. At Clarové, that never happens.",
-                "knowsAbout": [
-                    "Website Development",
-                    "Web Application Development",
-                    "SaaS Platform Development",
-                    "Mobile App Development",
-                    "E-commerce Development",
-                    "MVP Development",
-                    "Business Software Solutions"
-                ],
-                "areaServed": [
-                    { "@type": "Country", "name": "Nigeria" },
-                    { "@type": "Country", "name": "United Kingdom" },
-                    { "@type": "Country", "name": "Canada" },
-                    { "@type": "Country", "name": "United States" }
-                ],
-                "address": {
-                    "@type": "PostalAddress",
-                    "addressLocality": "Lagos",
-                    "addressCountry": "NG"
-                },
-                "sameAs": [
-                    "https://linkedin.com/company/clarovesystems"
-                ]
-            }
-        }'
-    ></page-meta>
-</head>
-<body>
-    <app-header></app-header>
-    <app-footer></app-footer>
-    <script></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.15.2/dist/cdn.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollTrigger.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script type="module" src="/assets/js/main.js"></script>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="/assets/css/style.css">
+        <link rel="apple-touch-icon" sizes="57x57" href="/assets/images/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="/assets/images/favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/assets/images/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="/assets/images/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/assets/images/favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="/assets/images/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/assets/images/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/assets/images/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="/assets/images/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="/assets/images/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon/favicon-16x16.png">
+        <link rel="manifest" href="/manifest.webmanifest">
+        <meta name="msapplication-config" content="/browserconfig.xml" />
+        <meta name="msapplication-TileColor" content="#F5F8F5">
+        <meta name="msapplication-TileImage" content="/assets/images/favicon/ms-icon-144x144.png">
+        <page-meta
+            title="About Us | Clarové Systems — Built for Business Owners Who've Been Let Down"
+            description="Clarove Systems was founded for one reason: too many business owners and directors have great ideas but can't find a development partner they can actually trust. We exist to change that."
+            url="https://clarovesystems.com/about/"
+            og-image="https://clarovesystems.com/assets/images/og-about.jpg"
+            schema='{
+                "@context": "https://schema.org",
+                "@type": "AboutPage",
+                "url": "https://clarovesystems.com/about/",
+                "name": "About Clarove Systems Limited",
+                "description": "Clarove Systems was built for non-technical business owners and directors who have a clear vision for their product but struggle to find a development partner who truly understands them. We combine technical precision with genuine business empathy — every project is delivered with full transparency, fixed pricing, and the kind of clarity that lets you sleep at night.",
+                "mainEntity": {
+                    "@type": "ProfessionalService",
+                    "name": "Clarove Systems Limited",
+                    "alternateName": "Clarove Systems",
+                    "url": "https://clarovesystems.com",
+                    "logo": "https://clarovesystems.com/assets/images/clarove-favicon.png",
+                    "slogan": "Clearly crafted. Precisely built.",
+                    "foundingDate": "2024",
+                    "description": "A software development company built around one belief: that every business owner deserves a technology partner who speaks their language, respects their investment, and delivers exactly what was promised. We work with founders, directors, and business owners across Nigeria, the UK, Canada, and the US — people who have been burned by vague timelines, hidden costs, and developers who disappeared mid-project. At Clarové, that never happens.",
+                    "knowsAbout": [
+                        "Website Development",
+                        "Web Application Development",
+                        "SaaS Platform Development",
+                        "Mobile App Development",
+                        "E-commerce Development",
+                        "MVP Development",
+                        "Business Software Solutions"
+                    ],
+                    "areaServed": [
+                        { "@type": "Country", "name": "Nigeria" },
+                        { "@type": "Country", "name": "United Kingdom" },
+                        { "@type": "Country", "name": "Canada" },
+                        { "@type": "Country", "name": "United States" }
+                    ],
+                    "address": {
+                        "@type": "PostalAddress",
+                        "addressLocality": "Lagos",
+                        "addressCountry": "NG"
+                    },
+                    "sameAs": [
+                        "https://linkedin.com/company/clarovesystems"
+                    ]
+                }
+            }'
+        ></page-meta>
+    </head>
+    <body>
+        <app-header data-active-tab="about"></app-header>
+
+        <!-- HERO STAGE: Premium Architectural About Us Canvas -->
+        <section id="about-hero" class="relative bg-brand-dark text-brand-light min-h-[90vh] flex items-center pt-32 pb-24 overflow-hidden border-b border-brand-light/10">
+            <div class="absolute inset-0 z-0 select-none pointer-events-none overflow-hidden">
+                <img 
+                    src="/assets/images/clarove-team.jpg" 
+                    alt="Clarove Systems engineering and product infrastructure teams synchronizing architectural sprint goals" 
+                    class="w-full h-full object-cover object-center scale-105 opacity-30 mix-blend-luminosity filter contrast-[1.15] brightness-[0.85]"
+                    data-aos="fade"
+                    data-aos-duration="1600"
+                    data-aos-easing="cubic-bezier(0.16, 1, 0.3, 1)"
+                />
+                
+                <div class="absolute inset-0 bg-linear-to-b from-brand-dark via-brand-dark/85 to-brand-dark z-10"></div>
+                <div class="absolute inset-0 bg-radial-to-c from-transparent via-brand-dark/50 to-brand-dark z-10"></div>
+                <div class="absolute inset-0 bg-microgrid-dark opacity-15 z-10"></div>
+            </div>
+
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-20 w-full">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+                    
+                    <!-- LEFT ARCHITECTURE BLOCK: Statement & Core Positioning Matrix (Spans 7 Columns) -->
+                    <div class="lg:col-span-7 space-y-8 text-center lg:text-left">
+                        
+                        <!-- Section Node Blueprint Label -->
+                        <div 
+                            class="inline-flex items-center gap-3 tracking-[0.25em]"
+                            data-aos="fade-up"
+                            data-aos-duration="800"
+                            data-aos-easing="cubic-bezier(0.16, 1, 0.3, 1)"
+                        >
+                            <span class="flex h-1.5 w-1.5 relative">
+                                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-gold opacity-75"></span>
+                                <span class="relative inline-flex rounded-full h-1.5 w-1.5 bg-brand-gold"></span>
+                            </span>
+                            <span class="font-mono text-[10px] uppercase font-medium text-brand-gold">// Inside Clarove Systems</span>
+                        </div>
+
+                        <!-- Definitive Elite SaaS Headline -->
+                        <h1 
+                            class="font-display text-4xl sm:text-5xl md:text-6xl font-black tracking-tight text-brand-light leading-tight"
+                            data-aos="fade-up"
+                            data-aos-delay="100"
+                            data-aos-duration="1000"
+                            data-aos-easing="cubic-bezier(0.16, 1, 0.3, 1)"
+                        >
+                            Your vision.<br />
+                            Perfectly Built. <br />
+                            <span class="font-serif italic font-normal text-brand-gold">100% Transparent.</span>
+                        </h1>
+
+                        <!-- Professional Deep-Tech Narrative -->
+                        <p 
+                            class="max-w-xl mx-auto lg:mx-0 font-display text-lg font-light leading-relaxed text-brand-light/70"
+                            data-aos="fade-up"
+                            data-aos-delay="200"
+                            data-aos-duration="1200"
+                            data-aos-easing="cubic-bezier(0.16, 1, 0.3, 1)"
+                        >
+                            We are for business owners who have a vision but don't want to become technical experts to see it through.
+                        </p>
+
+                        <!-- Action Anchors with Staggered Animation Entry -->
+                        <div 
+                            class="flex flex-row items-center justify-center lg:justify-start gap-4 pt-4"
+                            data-aos="fade-up"
+                            data-aos-delay="300"
+                            data-aos-duration="1400"
+                            data-aos-easing="cubic-bezier(0.16, 1, 0.3, 1)"
+                        >
+                            <a href="/solutions/" class="w-full sm:w-auto px-7 py-3.5 bg-brand-gold text-brand-dark font-mono text-xs font-bold uppercase tracking-wider rounded-lg hover:bg-brand-light hover:text-brand-dark transition-all duration-300 shadow-xl shadow-brand-gold/10 text-center">
+                                See our Softwares
+                            </a>
+                            <a href="#about-process" class="w-full sm:w-auto px-7 py-3.5 bg-brand-dark/60 text-brand-light/90 border border-brand-light/10 font-mono text-xs font-bold uppercase tracking-wider rounded-lg hover:border-brand-gold/40 hover:text-brand-light transition-all duration-300 backdrop-blur-md text-center">
+                                How we work
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- RIGHT ARCHITECTURE BLOCK: Floating Hardware Telemetry Diagnostics (Spans 5 Columns) -->
+                    <div 
+                        class="lg:col-span-5 hidden lg:flex flex-col justify-center relative pl-8"
+                        data-aos="fade-left"
+                        data-aos-delay="400"
+                        data-aos-duration="1400"
+                        data-aos-easing="cubic-bezier(0.16, 1, 0.3, 1)"
+                    >
+                        <!-- Telemetry Matrix Box -->
+                        <div class="w-full rounded-2xl border border-brand-light/10 bg-brand-dark/40 backdrop-blur-md p-6 space-y-6 shadow-2xl relative group hover:border-brand-gold/20 transition-all duration-500">
+                            <div class="absolute inset-0 bg-linear-to-tr from-transparent via-white/1 to-transparent pointer-events-none"></div>
+                            
+                            <!-- Frame Control Headers -->
+                            <div class="flex items-center justify-between border-b border-brand-light/5 pb-4">
+                                <div class="flex items-center gap-1.5">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-brand-gold/40"></span>
+                                    <span class="w-1.5 h-1.5 rounded-full bg-brand-light/10"></span>
+                                    <span class="w-1.5 h-1.5 rounded-full bg-brand-light/10"></span>
+                                </div>
+                                <span class="font-mono text-[8px] text-brand-light/30 tracking-widest uppercase">System Metrics // v2.06</span>
+                            </div>
+
+                            <!-- Metric Row 1 -->
+                            <div class="space-y-2">
+                                <div class="flex items-center justify-between font-mono text-[10px]">
+                                    <span class="text-brand-light/50">Operational Offices</span>
+                                    <span class="text-brand-gold font-bold">Lagos · London</span>
+                                </div>
+                                <div class="h-1 w-full bg-brand-light/5 rounded-full overflow-hidden">
+                                    <div class="h-full w-full bg-linear-to-r from-brand-gold/60 to-brand-gold rounded-full"></div>
+                                </div>
+                            </div>
+
+                            <!-- Metric Row 2 -->
+                            <div class="space-y-2">
+                                <div class="flex items-center justify-between font-mono text-[10px]">
+                                    <span class="text-brand-light/50">Projects Delivered</span>
+                                    <span class="text-brand-light/90">20+ Across 4 Countries</span>
+                                </div>
+                                <div class="h-1 w-full bg-brand-light/5 rounded-full overflow-hidden">
+                                    <div class="h-full w-[94%] bg-brand-light/20 rounded-full"></div>
+                                </div>
+                            </div>
+
+                            <!-- Metric Row 3 -->
+                            <div class="space-y-2">
+                                <div class="flex items-center justify-between font-mono text-[10px]">
+                                    <span class="text-brand-light/50">Client Satisfaction</span>
+                                    <span class="text-emerald-400">100% on Every Project</span>
+                                </div>
+                                <div class="h-1 w-full bg-brand-light/5 rounded-full overflow-hidden">
+                                    <div class="h-full w-full bg-emerald-500/40 rounded-full animate-pulse"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="pt-2 flex items-center justify-between text-[9px] font-mono text-brand-light/20">
+                                <span>Currently taking new projects</span>
+                                <span>REPLY WITHIN 24hrs</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION: METRIC PROVENANCE & LIFECYCLE VALIDATION -->
+        <section id="about-credentials" class="relative bg-brand-dark text-brand-light/90 py-32 overflow-hidden border-b border-brand-light/5">
+            
+            <!-- Ambient Technical Backdrop Matrix -->
+            <div class="absolute inset-0 z-0 select-none pointer-events-none opacity-20">
+                <div class="absolute inset-0 bg-microgrid-dark"></div>
+                <div class="absolute top-0 left-1/4 w-px h-full bg-linear-to-b from-brand-light/10 via-transparent to-transparent"></div>
+                <div class="absolute top-0 left-3/4 w-px h-full bg-linear-to-b from-brand-light/10 via-transparent to-transparent"></div>
+            </div>
+
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+                
+                <!-- HEADER ELEMENT: Strategic Operational Context -->
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 pb-16 border-b border-brand-light/5">
+                    <div 
+                        class="lg:col-span-5 space-y-4"
+                        data-aos="fade-up"
+                        data-aos-duration="1000"
+                        data-aos-easing="cubic-bezier(0.16, 1, 0.3, 1)"
+                    >
+                        <div class="inline-flex items-center gap-2 tracking-[0.2em]">
+                            <span class="w-1 h-1 bg-brand-gold rounded-full"></span>
+                            <span class="font-mono text-[10px] uppercase font-medium text-brand-gold">// Provenance Log</span>
+                        </div>
+                        <h2 class="font-display text-3xl sm:text-4xl font-black tracking-tight text-brand-light">
+                            The weight behind <br />our infrastructure.
+                        </h2>
+                    </div>
+                    <div 
+                        class="lg:col-span-7 flex items-end"
+                        data-aos="fade-up"
+                        data-aos-delay="150"
+                        data-aos-duration="1000"
+                        data-aos-easing="cubic-bezier(0.16, 1, 0.3, 1)"
+                    >
+                        <p class="font-body text-base font-light leading-relaxed text-brand-light/50 max-w-xl lg:ml-auto">
+                            We don’t rely on speculative projections. Our reputation is built into code running in live production environments, secure cross-border payment allocations, and resilient multi-node software deployments.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- HIGH-FIDELITY FACT MATRIX: Macro Telemetry Grid -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 border-b border-brand-light/5 bg-black/10 backdrop-blur-xs">
+                    
+                    <!-- Metric Node 01: Dual Node Footprint -->
+                    <div 
+                        class="p-8 sm:p-12 border-b sm:border-b-0 border-r border-brand-light/5 space-y-4 group transition-colors duration-500 hover:bg-brand-light/1"
+                        data-aos="fade-up"
+                        data-aos-delay="100"
+                        data-aos-duration="1000"
+                        data-aos-easing="cubic-bezier(0.16, 1, 0.3, 1)"
+                    >
+                        <span class="font-mono text-[10px] text-brand-light/30 uppercase tracking-widest block">// GEOGRAPHIC_RADIUS</span>
+                        <div class="space-y-1">
+                            <p class="font-display text-4xl font-light text-brand-light tracking-tight">2 <span class="text-brand-gold font-mono text-xl">Nodes</span></p>
+                            <p class="font-mono text-[11px] text-brand-gold uppercase tracking-wider">Nigeria & United Kingdom</p>
+                        </div>
+                        <p class="font-body text-xs font-light leading-relaxed text-brand-light/50 pt-2">
+                            Operating simultaneously through registered hubs in Lagos and London to handle localized regulatory and engineering tasks seamlessly.
+                        </p>
+                    </div>
+
+                    <!-- Metric Node 02: Transactional Integrity Architecture -->
+                    <div 
+                        class="p-8 sm:p-12 border-b sm:border-b-0 lg:border-b-0 border-r border-brand-light/5 space-y-4 group transition-colors duration-500 hover:bg-brand-light/1"
+                        data-aos="fade-up"
+                        data-aos-delay="200"
+                        data-aos-duration="1000"
+                        data-aos-easing="cubic-bezier(0.16, 1, 0.3, 1)"
+                    >
+                        <span class="font-mono text-[10px] text-brand-light/30 uppercase tracking-widest block">// PAYMENTS_ORCHESTRATION</span>
+                        <div class="space-y-1">
+                            <p class="font-display text-4xl font-light text-brand-light tracking-tight">Escrow <span class="text-brand-gold font-mono text-xl">Flows</span></p>
+                            <p class="font-mono text-[11px] text-brand-light/60 uppercase tracking-wider">Stripe & Paystack Native</p>
+                        </div>
+                        <p class="font-body text-xs font-light leading-relaxed text-brand-light/50 pt-2">
+                            Deep domain expertise building secure intermediary payment funnels, multi-party escrow clearing systems, and live verification logging pipelines.
+                        </p>
+                    </div>
+
+                    <!-- Metric Node 03: Engine Framework Standard -->
+                    <div 
+                        class="p-8 sm:p-12 border-b border-r border-brand-light/5 lg:border-b-0 space-y-4 group transition-colors duration-500 hover:bg-brand-light/1"
+                        data-aos="fade-up"
+                        data-aos-delay="300"
+                        data-aos-duration="1000"
+                        data-aos-easing="cubic-bezier(0.16, 1, 0.3, 1)"
+                    >
+                        <span class="font-mono text-[10px] text-brand-light/30 uppercase tracking-widest block">// TECHNICAL_PARADIGM</span>
+                        <div class="space-y-1">
+                            <p class="font-display text-4xl font-light text-brand-light tracking-tight">DDD <span class="text-brand-gold font-mono text-xl">Core</span></p>
+                            <p class="font-mono text-[11px] text-brand-light/60 uppercase tracking-wider">Domain-Driven Architecture</p>
+                        </div>
+                        <p class="font-body text-xs font-light leading-relaxed text-brand-light/50 pt-2">
+                            Every codebase utilizes strict layer boundaries, isolating domain logic from framework lifecycles to ensure decades of maintainable scaling.
+                        </p>
+                    </div>
+
+                    <!-- Metric Node 04: Project Taxonomy Ecosystem -->
+                    <div 
+                        class="p-8 sm:p-12 space-y-4 group transition-colors duration-500 hover:bg-brand-light/1"
+                        data-aos="fade-up"
+                        data-aos-delay="400"
+                        data-aos-duration="1000"
+                        data-aos-easing="cubic-bezier(0.16, 1, 0.3, 1)"
+                    >
+                        <span class="font-mono text-[10px] text-brand-light/30 uppercase tracking-widest block">// TAXONOMY_HANDLED</span>
+                        <div class="space-y-1">
+                            <p class="font-display text-4xl font-light text-brand-light tracking-tight">6 <span class="text-brand-gold font-mono text-xl">Classes</span></p>
+                            <p class="font-mono text-[11px] text-brand-light/60 uppercase tracking-wider">Web, Apps, SaaS & MVPs</p>
+                        </div>
+                        <p class="font-body text-xs font-light leading-relaxed text-brand-light/50 pt-2">
+                            From raw MVP systems to high-throughput marketplaces, custom websites, and multi-platform mobile applications engineered under tight production constraints.
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- PRISTINE VERIFICATION TABLE: Fine-grained Telemetry Logs -->
+                <div 
+                    class="mt-20 space-y-4"
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    data-aos-easing="cubic-bezier(0.16, 1, 0.3, 1)"
+                >
+                    <div class="flex items-center justify-between font-mono text-[9px] uppercase tracking-wider text-brand-light/40 px-4">
+                        <span>// HARD FACTUAL DIRECTORY</span>
+                        <span>CRYPTOGRAPHIC VERIFICATION ACTIVE</span>
+                    </div>
+
+                    <div class="w-full overflow-x-auto border border-brand-light/10 rounded-xl bg-brand-dark/40 backdrop-blur-md">
+                        <table class="w-full min-w-175 text-left border-collapse">
+                            <thead>
+                                <tr class="border-b border-brand-light/10 bg-white/2 font-mono text-[10px] uppercase tracking-wider text-brand-gold/80">
+                                    <th class="py-4 px-6 font-medium">Framework Registry</th>
+                                    <th class="py-4 px-6 font-medium">Core Stack Paradigm</th>
+                                    <th class="py-4 px-6 font-medium">Operational Scope</th>
+                                    <th class="py-4 px-6 font-medium text-right">System Status</th>
+                                </tr>
+                            </thead>
+                            <tbody class="font-mono text-xs divide-y divide-brand-light/5 text-brand-light/70">
+                                <tr class="hover:bg-white/1 transition-colors duration-200">
+                                    <td class="py-4 px-6 font-display font-medium text-brand-light">Clarove Systems Limited</td>
+                                    <td class="py-4 px-6">Django, Custom APIs, Cloud Architecture</td>
+                                    <td class="py-4 px-6">Websites, Mobile Apps, Full-Stack SaaS Platforms</td>
+                                    <td class="py-4 px-6 text-right text-emerald-400">Active Node</td>
+                                </tr>
+                                <tr class="hover:bg-white/1 transition-colors duration-200">
+                                    <td class="py-4 px-6 font-display font-medium text-brand-light">The Servio Platform</td>
+                                    <td class="py-4 px-6">Firebase Integration, Live WebSockets, Milestone Escrows</td>
+                                    <td class="py-4 px-6">Intermediary Project Management & Secure Professional Fee Escrow</td>
+                                    <td class="py-4 px-6 text-right text-brand-gold">v2 Pipeline Active</td>
+                                </tr>
+                                <tr class="hover:bg-white/1 transition-colors duration-200">
+                                    <td class="py-4 px-6 font-display font-medium text-brand-light">Multi-Gateway Infrastructure</td>
+                                    <td class="py-4 px-6">Stripe Checkout, Paystack API, Webhook Listeners</td>
+                                    <td class="py-4 px-6">Cross-Border Capital Routing (NG & UK Nodes)</td>
+                                    <td class="py-4 px-6 text-right text-emerald-400">Production Ready</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <p class="font-mono text-[9px] text-brand-light/20 text-right uppercase tracking-wider">
+                        * All data entries are anchored to explicit project handoffs and registered entity operations.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECTION: THE OPERATIONAL ROADMAP (ENGAGEMENT LIFECYCLE) -->
+        <section id="about-process" class="relative bg-brand-dark text-brand-light/90 py-32 overflow-hidden border-b border-brand-light/5">
+            
+            <!-- Ambient Structural Canvas Elements -->
+            <div class="absolute inset-0 z-0 select-none pointer-events-none opacity-20">
+                <div class="absolute inset-0 bg-microgrid-dark"></div>
+                <div class="absolute top-1/2 left-0 w-full h-px bg-linear-to-r from-transparent via-brand-light/10 to-transparent"></div>
+            </div>
+
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+                
+                <!-- INTRO ARCHITECTURE: Aligning the Buyer's Perspective -->
+                <div class="max-w-3xl space-y-4 mb-20 text-center lg:text-left">
+                    <div 
+                        class="inline-flex items-center gap-2 tracking-[0.2em]"
+                        data-aos="fade-up"
+                        data-aos-duration="800"
+                        data-aos-easing="cubic-bezier(0.16, 1, 0.3, 1)"
+                    >
+                        <span class="w-1 h-1 bg-brand-gold rounded-full"></span>
+                        <span class="font-mono text-[10px] uppercase font-medium text-brand-gold">// Operational Protocol</span>
+                    </div>
+                    <h2 
+                        class="font-display text-3xl sm:text-4xl md:text-5xl font-black tracking-tight text-brand-light leading-tight"
+                        data-aos="fade-up"
+                        data-aos-delay="100"
+                        data-aos-duration="1000"
+                        data-aos-easing="cubic-bezier(0.16, 1, 0.3, 1)"
+                    >
+                        What happens after you reach out.
+                    </h2>
+                    <p 
+                        class="font-body text-base font-light text-brand-light/60 max-w-2xl pt-2"
+                        data-aos="fade-up"
+                        data-aos-delay="150"
+                        data-aos-duration="1000"
+                        data-aos-easing="cubic-bezier(0.16, 1, 0.3, 1)"
+                    >
+                        The greatest risk in software development isn't engineering—it's misalignment. We have eliminated the ambiguity from the process with a predictable, transparent four-step workflow designed to protect your capital and timeline.
+                    </p>
+                </div>
+
+                <!-- THE 4-STEP OPERATIONAL PROTOCOL GRID -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 relative">
+                    
+                    <!-- STEP 01: DISCOVERY -->
+                    <div 
+                        class="relative border border-brand-light/10 bg-brand-dark/40 backdrop-blur-md p-8 rounded-2xl space-y-6 flex flex-col justify-between group transition-all duration-500 hover:border-brand-gold/20"
+                        data-aos="fade-up"
+                        data-aos-delay="100"
+                        data-aos-duration="1000"
+                        data-aos-easing="cubic-bezier(0.16, 1, 0.3, 1)"
+                    >
+                        <div class="space-y-4">
+                            <div class="flex items-baseline justify-between font-mono">
+                                <span class="text-[10px] uppercase text-brand-gold font-bold tracking-wider">// 01_ALIGNMENT</span>
+                                <span class="text-xs text-brand-light/20">PHASE_01</span>
+                            </div>
+                            <h3 class="font-display text-xl font-bold text-brand-light">Discovery & Scope</h3>
+                            <p class="font-body text-xs font-light leading-relaxed text-brand-light/60">
+                                We begin with an exhaustive, non-technical exploration of your exact commercial objectives. We unpack your operational challenges, prioritize features based on ROI, and define success metrics long before anyone mentions a single line of code.
+                            </p>
+                        </div>
+                        <div class="pt-4 font-mono text-[9px] uppercase tracking-wider text-brand-light/30 border-t border-brand-light/5">
+                            Deliverable: Scope Blueprint
+                        </div>
+                    </div>
+
+                    <!-- STEP 02: PLAN -->
+                    <div 
+                        class="relative border border-brand-light/10 bg-brand-dark/40 backdrop-blur-md p-8 rounded-2xl space-y-6 flex flex-col justify-between group transition-all duration-500 hover:border-brand-gold/20"
+                        data-aos="fade-up"
+                        data-aos-delay="200"
+                        data-aos-duration="1000"
+                        data-aos-easing="cubic-bezier(0.16, 1, 0.3, 1)"
+                    >
+                        <div class="space-y-4">
+                            <div class="flex items-baseline justify-between font-mono">
+                                <span class="text-[10px] uppercase text-brand-gold font-bold tracking-wider">// 02_DE_RISK</span>
+                                <span class="text-xs text-brand-light/20">PHASE_02</span>
+                            </div>
+                            <h3 class="font-display text-xl font-bold text-brand-light">The Master Plan</h3>
+                            <p class="font-body text-xs font-light leading-relaxed text-brand-light/60">
+                                Next, we map out clear structural interactive wireframes, step-by-step user journeys, and definitive pricing options. You will see exactly how your platform will look, behave, and navigate, completely eliminating structural ambiguity before construction begins.
+                            </p>
+                        </div>
+                        <div class="pt-4 font-mono text-[9px] uppercase tracking-wider text-brand-light/30 border-t border-brand-light/5">
+                            Deliverable: Interactive Prototypes
+                        </div>
+                    </div>
+
+                    <!-- STEP 03: BUILD -->
+                    <div 
+                        class="relative border border-brand-light/10 bg-brand-dark/40 backdrop-blur-md p-8 rounded-2xl space-y-6 flex flex-col justify-between group transition-all duration-500 hover:border-brand-gold/20"
+                        data-aos="fade-up"
+                        data-aos-delay="300"
+                        data-aos-duration="1000"
+                        data-aos-easing="cubic-bezier(0.16, 1, 0.3, 1)"
+                    >
+                        <div class="space-y-4">
+                            <div class="flex items-baseline justify-between font-mono">
+                                <span class="text-[10px] uppercase text-brand-gold font-bold tracking-wider">// 03_EXECUTION</span>
+                                <span class="text-xs text-brand-light/20">PHASE_03</span>
+                            </div>
+                            <h3 class="font-display text-xl font-bold text-brand-light">Pristine Engineering</h3>
+                            <p class="font-body text-xs font-light leading-relaxed text-brand-light/60">
+                                We transition your approved plan into active development. You are granted full access to a private progress portal with regular updates, letting you review milestones dynamically as they take shape, with zero radio silence.
+                            </p>
+                        </div>
+                        <div class="pt-4 font-mono text-[9px] uppercase tracking-wider text-brand-light/30 border-t border-brand-light/5">
+                            Deliverable: Operational Platform
+                        </div>
+                    </div>
+
+                    <!-- STEP 04: LAUNCH + SUPPORT -->
+                    <div 
+                        class="relative border border-brand-light/10 bg-brand-dark/40 backdrop-blur-md p-8 rounded-2xl space-y-6 flex flex-col justify-between group transition-all duration-500 hover:border-brand-gold/20"
+                        data-aos="fade-up"
+                        data-aos-delay="400"
+                        data-aos-duration="1000"
+                        data-aos-easing="cubic-bezier(0.16, 1, 0.3, 1)"
+                    >
+                        <div class="space-y-4">
+                            <div class="flex items-baseline justify-between font-mono">
+                                <span class="text-[10px] uppercase text-brand-gold font-bold tracking-wider">// 04_CONTINUITY</span>
+                                <span class="text-xs text-brand-light/20">PHASE_04</span>
+                            </div>
+                            <h3 class="font-display text-xl font-bold text-brand-light">Deployment & Scale</h3>
+                            <p class="font-body text-xs font-light leading-relaxed text-brand-light/60">
+                                We manage the technical launch directly, moving your platform seamlessly into production. Following deployment, we stay on hand to provide post-launch optimization, interface training, and reliable ongoing support to ensure your product scales cleanly.
+                            </p>
+                        </div>
+                        <div class="pt-4 font-mono text-[9px] uppercase tracking-wider text-brand-light/30 border-t border-brand-light/5">
+                            Deliverable: Post-Launch Support
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- LOW-FRICTION CALL TO ACTION FRAME: De-Risking the First Step -->
+                <div 
+                    class="mt-20 rounded-2xl border border-brand-gold/20 bg-linear-to-r from-brand-dark via-brand-dark/95 to-brand-dark p-8 sm:p-12 shadow-2xl relative overflow-hidden group"
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    data-aos-easing="cubic-bezier(0.16, 1, 0.3, 1)"
+                >
+                    <!-- Premium background structural glow -->
+                    <div class="absolute -right-20 -bottom-20 w-80 h-80 bg-brand-gold/5 rounded-full filter blur-3xl group-hover:bg-brand-gold/10 transition-all duration-700 pointer-events-none"></div>
+                    
+                    <div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                        <div class="lg:col-span-8 space-y-4 text-center lg:text-left">
+                            <span class="font-mono text-[9px] text-brand-gold uppercase tracking-widest block">// INIT_EXPLORATORY_NODE</span>
+                            <h3 class="font-display text-2xl sm:text-3xl font-black text-brand-light tracking-tight">
+                                Let’s talk through your vision. No strings attached.
+                            </h3>
+                            <p class="font-body text-sm font-light text-brand-light/60 max-w-xl mx-auto lg:mx-0 leading-relaxed">
+                                Booking an exploratory consultation is a low-friction diagnostic discussion. We don’t run aggressive sales pitches. We simply assess your technical goals, confirm if we are an optimal match, and outline your path forward.
+                            </p>
+                        </div>
+                        
+                        <div class="lg:col-span-4 flex justify-center lg:justify-end">
+                            <a 
+                                href="/book-call" 
+                                class="inline-flex items-center gap-3 bg-brand-gold hover:bg-white text-brand-dark font-mono text-xs font-bold uppercase tracking-wider px-8 py-4 rounded-xl shadow-xl transition-all duration-300 group-hover:scale-[1.02]"
+                            >
+                                <span>Schedule Diagnostics</span>
+                                <span class="font-sans text-sm font-normal">&rarr;</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <app-footer></app-footer>
+        
+        <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.15.2/dist/cdn.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollTrigger.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script type="module" src="/assets/js/main.js"></script>
+    </body>
 </html>
