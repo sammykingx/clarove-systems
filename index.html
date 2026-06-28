@@ -84,13 +84,13 @@
 
                         <div class="js-hero-body opacity-0 flex flex-row flex-wrap max-w-lg items-center justify-center lg:justify-start gap-4 pt-2 mx-auto lg:mx-0">
                             <a href="#projects" class="w-auto inline-flex items-center justify-center bg-brand-green-muted text-brand-light px-4 sm:px-8 py-3.5 sm:py-4 font-display text-xs sm:text-base lg:text-lg font-semibold shadow-lg hover:bg-brand-green-muted hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300 rounded-sm group">
-                                See Portfolio
+                                Get Started
                                 <svg class="ml-2 h-4 w-4 transform group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
                                 </svg>
                             </a>
-                            <a href="#consultation" class="w-auto inline-flex items-center justify-center border border-brand-dark/20 text-brand-dark px-4 sm:px-8 py-3.5 sm:py-4 font-display text-xs sm:text-base lg:text-lg font-semibold hover:bg-brand-dark hover:text-brand-light hover:border-brand-dark transition-all duration-300 rounded-sm">
-                                Let's Talk Here
+                            <a href="/solutions/" class="w-auto inline-flex items-center justify-center border border-brand-dark/20 text-brand-dark px-4 sm:px-8 py-3.5 sm:py-4 font-display text-xs sm:text-base lg:text-lg font-semibold hover:bg-brand-dark hover:text-brand-light hover:border-brand-dark transition-all duration-300 rounded-sm">
+                                Explore Our Apps
                             </a>
                         </div>
 
@@ -197,7 +197,6 @@
                         </h2>
                     </div>
                     
-                    <!-- Custom System Indicator telling users to swipe/scroll -->
                     <div class="font-mono text-[10px] tracking-widest uppercase text-brand-dark/40 flex items-center gap-3 hidden md:flex select-none">
                         <span>EXPLORE</span>
                         <span class="animate-pulse font-sans font-bold text-brand-gold">&rarr;</span>
@@ -205,7 +204,7 @@
                 </div>
             </div>
 
-            <!-- HORIZONTAL SCROLL CANVAS (Uses utility styles to strip standard scrollbar look) -->
+            <!-- HORIZONTAL SCROLL CANVAS HOOK -->
             <div class="js-h-track w-full overflow-x-auto flex gap-6 px-4 sm:px-6 lg:px-8 pb-8 no-scrollbar snap-x snap-mandatory scroll-smooth relative z-10">
                 
                 <!-- CARD 1: Website -->
@@ -330,7 +329,7 @@
         <!-- TESTIMONIAL MATRIX: High-End Circular Proof Wheel & Case Stage -->
         <section id="proof" class="relative bg-brand-dark text-brand-light/90 pt-32 pb-28 overflow-hidden border-t border-brand-light/10">
             
-            <!-- BACKGROUND LAYER: Fixed High-End Luminous Image Blend -->
+            <!-- BG Image -->
             <div class="absolute inset-0 z-0 select-none pointer-events-none mix-blend-luminosity opacity-70">
                 <img 
                     src="/assets/images/business-owners-happy.jpg" 
@@ -343,8 +342,6 @@
             </div>
 
             <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10 w-full space-y-20">
-                
-                <!-- Header Block: Sophisticated Typography -->
                 <div class="max-w-3xl space-y-4 text-center lg:text-left">
                     <div data-aos="fade-up" data-aos-duration="800" data-aos-easing="cubic-bezier(0.16, 1, 0.3, 1)" class="inline-flex items-center gap-3 tracking-[0.25em]">
                         <span class="flex h-1.5 w-1.5 relative">
@@ -362,14 +359,12 @@
                 <!-- CORE CONTENT LAYOUT MATRIX -->
                 <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-8 items-center">
                     
-                    <!-- LEFT AREA: Responsive Circular Image -->
+                    <!-- LEFT COLUMN -->
                     <div class="lg:col-span-7 flex flex-col items-center justify-center relative min-h-112">
-                        <!-- <span class="font-mono text-[9px] uppercase tracking-wider text-brand-light/40 absolute top-0 left-0">// MATRIX_NODE_01: interface_wheel</span> -->
-                        
                         <!-- The Gallery Orbit Track -->
                         <div class="relative w-70 h-70 sm:w-95 sm:h-95 rounded-full border border-brand-light/10 flex items-center justify-center animate-[spin_80s_linear_infinite] hover:[animation-play-state:paused]">
                             
-                            <!-- Wheel Item 1: Core Dashboard Asset -->
+                            <!-- Wheel Item 1 -->
                             <div class="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2 group cursor-pointer select-none">
                                 <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-full overflow-hidden border border-brand-light/20 shadow-2xl p-1 bg-brand-dark/80 backdrop-blur-md transition-all duration-300 transform group-hover:scale-110 group-hover:border-brand-gold ring-4 ring-black/20">
                                     <img src="/assets/images/client-images/client-jason.jpg" alt="Jason ● UK" class="w-full h-full object-cover rounded-full mix-blend-lighten" />
@@ -377,7 +372,7 @@
                                 <span class="absolute -bottom-6 left-1/2 -translate-x-1/2 font-mono text-[8px] bg-brand-dark/90 text-brand-light px-1.5 py-0.5 whitespace-nowrap border border-brand-light/10 tracking-tighter opacity-0 group-hover:opacity-100 transition-opacity duration-300">Jason ● UK</span>
                             </div>
 
-                            <!-- Wheel Item 2: Mobile Interface Snapshot -->
+                            <!-- Wheel Item 2 -->
                             <div class="absolute right-0 translate-x-1/2 top-1/2 -translate-y-1/2 group cursor-pointer select-none">
                                 <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-full overflow-hidden border border-brand-light/20 shadow-2xl p-1 bg-brand-dark/80 backdrop-blur-md transition-all duration-300 transform group-hover:scale-110 group-hover:border-brand-gold ring-4 ring-black/20">
                                     <img src="/assets/images/client-images/client-mitchelle.jpg" alt="Mitchelle ● CA" class="w-full h-full object-cover rounded-full mix-blend-lighten" />
@@ -385,7 +380,7 @@
                                 <span class="absolute -bottom-6 left-1/2 -translate-x-1/2 font-mono text-[8px] bg-brand-dark/90 text-brand-light px-1.5 py-0.5 whitespace-nowrap border border-brand-light/10 tracking-tighter opacity-0 group-hover:opacity-100 transition-opacity duration-300">Mitchelle ● CA</span>
                             </div>
 
-                            <!-- Wheel Item 3: API Architecture Log -->
+                            <!-- Wheel Item 3 -->
                             <div class="absolute bottom-0 translate-y-1/2 left-1/2 -translate-x-1/2 group cursor-pointer select-none">
                                 <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-full overflow-hidden border border-brand-light/20 shadow-2xl p-1 bg-brand-dark/80 backdrop-blur-md transition-all duration-300 transform group-hover:scale-110 group-hover:border-brand-gold ring-4 ring-black/20">
                                     <img src="/assets/images/client-images/client-mr-bakare.jpg" alt="Mr Bakare ● NG" class="w-full h-full object-cover rounded-full mix-blend-lighten" />
@@ -393,7 +388,7 @@
                                 <span class="absolute -bottom-6 left-1/2 -translate-x-1/2 font-mono text-[8px] bg-brand-dark/90 text-brand-light px-1.5 py-0.5 whitespace-nowrap border border-brand-light/10 tracking-tighter opacity-0 group-hover:opacity-100 transition-opacity duration-300">Mr Bakare ● NG</span>
                             </div>
 
-                            <!-- Wheel Item 4: Database Infrastructure Flow -->
+                            <!-- Wheel Item 4 -->
                             <div class="absolute left-0 -translate-x-1/2 top-1/2 -translate-y-1/2 group cursor-pointer select-none">
                                 <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-full overflow-hidden border border-brand-light/20 shadow-2xl p-1 bg-brand-dark/80 backdrop-blur-md transition-all duration-300 transform group-hover:scale-110 group-hover:border-brand-gold ring-4 ring-black/20">
                                     <img src="/assets/images/client-images/client-audrey.jpg" alt="Audrey ● US" class="w-full h-full object-cover rounded-full mix-blend-lighten" />
@@ -403,7 +398,7 @@
 
                         </div>
 
-                        <!-- Center Piece: Core Diagnostic Focal Node -->
+                        <!-- Center Piece -->
                         <div class="absolute inset-0 m-auto w-24 h-24 sm:w-32 sm:h-32 rounded-full border border-brand-gold/20 bg-brand-dark/90 backdrop-blur-xl flex flex-col items-center justify-center p-4 text-center select-none shadow-inner z-10 pointer-events-none">
                             <span class="font-mono text-[8px] tracking-widest text-brand-gold/60 uppercase">Trusted by</span>
                             <span class="font-display text-xs font-bold text-brand-light tracking-tight mt-1">Clients in 4 countries</span>
@@ -412,7 +407,7 @@
                         
                     </div>
 
-                    <!-- RIGHT AREA: Stacked Text & Screenshot Metrics (Spans 5 Columns) -->
+                    <!-- RIGHT COLUMN -->
                     <div class="lg:col-span-5 space-y-10 lg:pl-8 lg:border-l lg:border-brand-light/5">
                         <div data-aos="fade-up" data-aos-duration="1000" data-aos-easing="cubic-bezier(0.16, 1, 0.3, 1)" class="space-y-6">
                             <div class="flex items-center justify-between font-mono text-[9px] uppercase tracking-wider text-brand-light/40">
@@ -434,7 +429,7 @@
                         <!-- Separator Line -->
                         <div class="h-px w-full bg-brand-light/5"></div>
 
-                        <!-- CARD B: Ambient Review Capture Frame -->
+                        <!-- TESTIMONIAL CARD  -->
                         <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="1200" data-aos-easing="cubic-bezier(0.16, 1, 0.3, 1)" class="space-y-4">
                             <span class="font-mono text-[9px] uppercase tracking-wider text-brand-light/40 block max-w-md mx-auto lg:mx-0">// More from satistifed clients</span>
                             <div class="relative w-full rounded-2xl overflow-hidden border border-brand-light/10 bg-brand-dark/40 p-2 shadow-2xl transition-all duration-500 hover:border-brand-gold/30 group max-w-md mx-auto lg:mx-0">
