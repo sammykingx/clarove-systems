@@ -21,7 +21,7 @@ export class PageMeta extends BaseComponent {
         const title = this.getAttribute("title") || "Clarove Systems Limited | Clearly Crafted. Precisely Built.";
         const description = this.getAttribute("description") || "Clarove Systems builds websites, web apps, SaaS platforms, and marketplaces for business owners in Nigeria, the UK, Canada, and the US. Fixed pricing. Full transparency. Delivered on schedule.";
         const url = this.getAttribute("url") || "https://clarovesystems.com/";
-        // const ogImage = this.getAttribute("og-image") || "https://clarovesystems.com/assets/images/og-image.jpg";
+        const ogImage = this.getAttribute("og-image") || "https://clarovesystems.com/assets/images/og-image.png";
         const ogType = this.getAttribute("og-type") || "website";
         const schemaAttr = this.getAttribute("schema");
 
@@ -63,7 +63,7 @@ export class PageMeta extends BaseComponent {
         setMeta('meta[property="og:url"]', "content", url);
         setMeta('meta[property="og:title"]', "content", title);
         setMeta('meta[property="og:description"]', "content", description);
-        // setMeta('meta[property="og:image"]', "content", ogImage);
+        setMeta('meta[property="og:image"]', "content", ogImage);
         setMeta('meta[property="og:image:width"]', "content", "1200");
         setMeta('meta[property="og:image:height"]', "content", "630");
         setMeta('meta[property="og:image:alt"]', "content", `${title} — Clarove Systems Limited`);
@@ -74,7 +74,7 @@ export class PageMeta extends BaseComponent {
         setMeta('meta[name="twitter:url"]', "content", url);
         setMeta('meta[name="twitter:title"]', "content", title);
         setMeta('meta[name="twitter:description"]', "content", description);
-        // setMeta('meta[name="twitter:image"]', "content", ogImage);
+        setMeta('meta[name="twitter:image"]', "content", ogImage);
         setMeta('meta[name="twitter:image:alt"]', "content", `${title} — Clarove Systems Limited`);
 
         // Remove any existing page-meta schema before writing a new one
