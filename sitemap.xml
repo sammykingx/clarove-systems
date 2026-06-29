@@ -12,17 +12,24 @@
   </url>
 
   <url>
-    <loc>https://clarovesystems.com/solutions/</loc>
+    <loc>https://clarovesystems.com/explore/</loc>
     <lastmod>2026-06-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://clarovesystems.com/about/</loc>
+    <loc>https://clarovesystems.com/solutions/</loc>
     <lastmod>2026-06-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://clarovesystems.com/about/</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 
 </urlset>

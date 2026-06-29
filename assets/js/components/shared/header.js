@@ -41,7 +41,7 @@ export class AppHeader extends BaseComponent {
                             </nav>
                             <div class="hidden md:flex items-center gap-4">
                                 <a 
-                                    href="#contact"
+                                    href="/explore"
                                     class="inline-flex items-center justify-center bg-brand-forest-green px-5 py-2.5 font-display text-sm font-semibold text-brand-light transition-all duration-300 hover:bg-brand-green-muted shadow-sm hover:shadow-md hover:-translate-y-0.5 rounded-sm"
                                 >Get Started</a>
                             </div>
@@ -131,7 +131,7 @@ export class AppHeader extends BaseComponent {
                             </nav>
                         </div>
                         <div class="border-t border-brand-dark/10 pt-6">
-                            <a href="#contact" @click="mobileMenuOpen = false" class="block w-full text-center bg-brand-forest-green px-4 py-3 font-display text-sm font-semibold text-brand-light transition-colors duration-300 hover:bg-brand-green-muted rounded-sm shadow-sm">
+                            <a href="/explore" @click="mobileMenuOpen = false" class="block w-full text-center bg-brand-forest-green px-4 py-3 font-display text-sm font-semibold text-brand-light transition-colors duration-300 hover:bg-brand-green-muted rounded-sm shadow-sm">
                                 Get Started
                             </a>
                             <div class="mt-4 text-center">
