@@ -1,74 +1,151 @@
 @import "tailwindcss";
 
+
 @theme {
   --color-brand-dark: #0B2216;
   --color-brand-gold: #C5A043;
   --color-brand-green-muted: #1E4331;
   --color-brand-forest-green: #1A3D2B;
   --color-brand-light: #F5F7F5;
-  
+
   --font-display: "Plus Jakarta Sans", sans-serif;
   --font-body: "Inter", sans-serif;
 
-  /* High-end custom animation extensions */
   --animate-spin-slow: spin 20s linear infinite;
   --animate-bounce-slow: bounce-slow 4s ease-in-out infinite;
   --animate-float: float 5s ease-in-out infinite;
+
+  /* Page transition animations */
+  --animate-fade-blur-out: fade-blur-out 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  --animate-fade-blur-in: fade-blur-in 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 }
 
-/* Base resets and smooth behavior */
+
+/* GLOBAL DEFAULTS
+   @layer base → HTML element resets, project-wide constants,
+   and keyframe definitions. 
+*/
 @layer base {
+  :root {
+    --scrollbar-width: 4px;
+  }
+
   html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
     font-family: var(--font-body);
     background-color: var(--color-brand-light);
     color: var(--color-brand-dark);
+    min-height: 100vh;
   }
-  
+
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-display);
   }
 
-  /* Prevent flickering of interactive elements on load */
-  [x-cloak] { 
-    display: none !important; 
+  /* Alpine.js: hide elements before JS initialises to prevent flash */
+  [x-cloak] {
+    display: none !important;
+  }
+
+  /*
+   * Keyframes live here, not floating at the root level.
+   * They're referenced by --animate-* tokens in @theme above.
+  */
+  @keyframes bounce-slow {
+    0%, 100% { transform: translateY(0); }
+    50%       { transform: translateY(-6px); }
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50%       { transform: translateY(-8px) rotate(1deg); }
+  }
+
+ /* Old page fades out and zooms/expands slightly while blurring */
+  @keyframes fade-blur-out {
+    from { 
+      opacity: 1; 
+      transform: scale(1); 
+      filter: blur(0px); 
+    }
+    to { 
+      opacity: 0; 
+      transform: scale(1.05); 
+      filter: blur(12px); 
+    }
+  }
+
+  /* New page fades in and scales down from a slightly larger size into place */
+  @keyframes fade-blur-in {
+    from { 
+      opacity: 0; 
+      transform: scale(0.95); 
+      filter: blur(12px); 
+    }
+    to { 
+      opacity: 1; 
+      transform: scale(1); 
+      filter: blur(0px); 
+    }
   }
 }
 
-/* Premium Microgrid Background Utility */
-.bg-microgrid {
+
+@utility no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+
+  /* Chrome, Safari, and Opera */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@utility bg-microgrid {
   background-size: 24px 24px;
-  background-image: 
+  background-image:
     linear-gradient(to right, rgba(11, 34, 22, 0.04) 1px, transparent 1px),
     linear-gradient(to bottom, rgba(11, 34, 22, 0.04) 1px, transparent 1px);
 }
 
-/* Dark mode variation for the hero/footer microgrid sections */
-.bg-microgrid-dark {
+@utility bg-microgrid-dark {
   background-size: 24px 24px;
-  background-image: 
+  background-image:
     linear-gradient(to right, rgba(245, 247, 245, 0.03) 1px, transparent 1px),
     linear-gradient(to bottom, rgba(245, 247, 245, 0.03) 1px, transparent 1px);
 }
 
-/* Custom Keyframe Orchestrations */
-@keyframes bounce-slow {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-6px); }
-}
-
-@keyframes float {
-  0%, 100% { transform: translateY(0) rotate(0deg); }
-  50% { transform: translateY(-8px) rotate(1deg); }
-}
-
-/* Hides scrollbar while keeping scroll behaviour intact */
-.no-scrollbar::-webkit-scrollbar { display: none; }
-.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
-
-/* Prevent the pinned section from collapsing during pin in horizontal scroll
- * Tell the browser the track will be transformed — enables GPU compositing
+/* 
+ * GPU compositing hint for the horizontal scroll track element.
+ * Tells the browser this element will be transformed,
+ * so it gets its own compositor layer before the pin fires.
 */
-.js-h-track {
-    will-change: transform;
+@utility js-h-track {
+  will-change: transform;
+}
+
+/* page transition */
+@view-transition {
+  navigation: auto; /* Enables cross-document page transitions */
+}
+
+/* Outgoing page slides left and fades out */
+::view-transition-old(legal-doc-transition) {
+  @apply animate-fade-blur-out;
+}
+
+/* Incoming page slides in from the right and fades in */
+::view-transition-new(legal-doc-transition) {
+  @apply animate-fade-blur-in;
+  mix-blend-mode: normal;
+}
+
+.animate-legal-pages {
+  view-transition-name: legal-doc-transition;
 }
