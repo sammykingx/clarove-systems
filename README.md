@@ -31,7 +31,7 @@ The site acts as a professional online presence for the company, helping potenti
 
 ![Clarove Systems mockup](/assets/images/mockups/clarove-mk-3.jpeg)
 
-![Clarove Systems mockup](/assets/images/mockups/clarove-mk-2.jpeg)
+![Clarove Systems mockup](/assets/images/mockups/dsk-abt-two-view.jpeg)
 
 ## Tech stack
 
