@@ -99,7 +99,7 @@ export class AppFooter extends BaseComponent {
                                         <span>Terms of Service</span>
                                         <span class="text-brand-light/20 group-hover:text-brand-gold transition-colors font-sans">&rarr;</span>
                                     </a>
-                                    <a href="/security" class="font-mono text-xs tracking-tight text-brand-light/60 hover:text-brand-gold transition-colors duration-300 flex items-center justify-between group">
+                                    <a href="#" class="font-mono text-xs tracking-tight text-brand-light/60 hover:text-brand-gold transition-colors duration-300 flex items-center justify-between group">
                                         <span>Infrastructure Security</span>
                                         <span class="text-brand-light/20 group-hover:text-brand-gold transition-colors font-sans">&rarr;</span>
                                     </a>
