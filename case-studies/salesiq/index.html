@@ -1,0 +1,83 @@
+<!--
+1. Use v2 hero header
+2. take v3 patterned art bg
+3. Use v3 before and after
+4. Use v3 how we worked together and closing cta
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/assets/css/style.css">
+        <link rel="apple-touch-icon" sizes="57x57" href="/assets/images/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="/assets/images/favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/assets/images/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="/assets/images/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/assets/images/favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="/assets/images/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/assets/images/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/assets/images/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="/assets/images/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="/assets/images/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon/favicon-16x16.png">
+        <link rel="manifest" href="/manifest.webmanifest">
+        <meta name="msapplication-config" content="/browserconfig.xml" />
+        <meta name="msapplication-TileColor" content="#F5F8F5">
+        <meta name="msapplication-TileImage" content="/assets/images/favicon/ms-icon-144x144.png">
+        <page-meta
+            title="SalesIQ | Clarove Systems Limited"
+            description="SalesIQ tracks social to counter sales, issues digital/POS receipts, and monitors business performance all in one place."
+            url="https://clarovesystems.com/case-studies/salesiq/"
+            og-image="https://clarovesystems.com/assets/images/og-portfolio.jpg"
+            og-type="website"
+            schema='{
+                "@context": "https://schema.org",
+                "@type": "CollectionPage",
+                "name": "Our Works — Clarove Systems Limited",
+                "url": "https://clarovesystems.com/case-studies/salesiq/",
+                "description": "Manage social to counter sales, issue receipts, and track business performance all in one place."
+            }'
+        ></page-meta>
+    </head>
+    <body>
+        <header class="bg-brand-dark text-brand-light bg-microgrid-dark">
+            <div class="mx-auto max-w-6xl px-6">
+                <nav class="flex items-center justify-between py-6" aria-label="Main">
+                    <a href="/" class="font-display text-lg font-bold">Clarove <span class="text-brand-gold">Systems</span></a>
+                    <div class="flex items-center gap-8 text-sm">
+                        <a href="/case-studies/" class="hidden sm:inline hover:text-brand-gold">Our work</a>
+                        <a href="/about/" class="hidden sm:inline hover:text-brand-gold">Our Vision</a>
+                        <a href="https://book.clarovesystems.com" class="rounded-full border border-brand-light/30 px-5 py-2 hover:border-brand-gold hover:text-brand-gold">Book a call</a>
+                    </div>
+                </nav>
+
+                <div class="max-w-4xl pt-14 pb-44 md:pb-60 animate-fade-blur-in motion-reduce:animate-none">
+                    <p class="mb-6 text-brand-gold font-medium">SalesIQ</p>
+                    <!-- EDIT: headline = the result for the owner, not what you built -->
+                    <h1 class="text-[clamp(2.4rem,6vw,4.75rem)] font-semibold leading-[1.05] tracking-tight">
+                        From scattered chats to one clear view of every sale
+                    </h1>
+                    <!-- EDIT: one plain sentence: who it's for and what it does for them -->
+                    <p class="mt-8 max-w-[56ch] text-lg leading-relaxed text-brand-light/80">
+                        SalesIQ helps social commerce sellers see what they sell, what they earn and where money is slipping away,
+                        without spreadsheets or guesswork.
+                    </p>
+                </div>
+            </div>
+        </header>
+        <app-footer></app-footer>
+        <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.15.2/dist/cdn.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollTrigger.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script type="module" src="/assets/js/main.js"></script>
+    </body>
+</html>

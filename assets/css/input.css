@@ -126,6 +126,7 @@
   }
 }
 
+/* BG Pattern Art */
 @utility bg-microgrid {
   background-size: 24px 24px;
   background-image:
@@ -138,6 +139,41 @@
   background-image:
     linear-gradient(to right, rgba(245, 247, 245, 0.03) 1px, transparent 1px),
     linear-gradient(to bottom, rgba(245, 247, 245, 0.03) 1px, transparent 1px);
+}
+
+@utility bg-hex-dark {
+  background-size: 56px 96px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='96' viewBox='0 0 56 96'%3E%3Cpath d='M28 0L56 16V48L28 64L0 48V16ZM28 64V96' fill='none' stroke='%23C5A043' stroke-opacity='.17'/%3E%3C/svg%3E");
+}
+
+@utility bg-hex-light {
+  background-size: 56px 96px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='96' viewBox='0 0 56 96'%3E%3Cpath d='M28 0L56 16V48L28 64L0 48V16ZM28 64V96' fill='none' stroke='%231A3D2B' stroke-opacity='.08'/%3E%3C/svg%3E");
+}
+
+@utility bg-dots {
+  background-size: 22px 22px;
+  background-image: radial-gradient(rgba(26,61,43,.18) 1px, transparent 1.4px);
+}
+
+@utility bg-hatch {
+  background-image:
+  repeating-linear-gradient(135deg, rgba(245,247,245,.07) 0 1px, transparent 1px 11px),
+  repeating-linear-gradient(62deg, rgba(245,247,245,.045) 0 1px, transparent 1px 19px);
+}
+  
+@utility bg-glow {
+  background-image: radial-gradient(closest-side, rgba(197,160,67,.30), transparent);
+}
+  
+@utility fade-edges {
+  -webkit-mask-image: radial-gradient(ellipse 75% 70% at 50% 45%, #000 25%, transparent 100%);
+  mask-image: radial-gradient(ellipse 75% 70% at 50% 45%, #000 25%, transparent 100%);
+}
+
+@utility fade-down {
+  -webkit-mask-image: linear-gradient(#000 35%, transparent);
+  mask-image: linear-gradient(#000 35%, transparent);
 }
 
 /* 
