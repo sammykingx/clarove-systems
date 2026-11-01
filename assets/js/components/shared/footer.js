@@ -25,7 +25,7 @@ export class AppFooter extends BaseComponent {
                         <div class="lg:col-span-5 space-y-8 flex flex-col justify-between">
                             <div class="space-y-4">
                                 <p class="font-display text-2xl font-black tracking-tight text-brand-light">
-                                    Clarove<span class="text-brand-gold font-light">Systems</span>
+                                    Clarove <span class="text-brand-gold font-light">Systems</span>
                                 </p>
                                 <div class="h-px w-12 bg-brand-gold/40"></div>
                                 <p class="font-mono text-[10px] uppercase tracking-[0.3em] text-brand-light/40 leading-relaxed">

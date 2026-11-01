@@ -31,11 +31,10 @@ export class AppHeader extends BaseComponent {
                                     <span class="absolute bottom-0 left-0 w-full h-0.5 bg-brand-gold transform ${isActive('home') ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100'} transition-transform duration-300 origin-left"></span>
                                 </a>
 
-                                <!--
                                 <a href="/case-studies" class="group font-display text-sm font-semibold ${isActive('case-studies') ? 'text-brand-dark' : 'text-brand-dark/60 hover:text-brand-dark'} transition-colors duration-300 relative py-1">
                                     <span>Case Studies</span>
                                     <span class="absolute bottom-0 left-0 w-full h-0.5 bg-brand-gold transform ${isActive('case-studies') ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100'} transition-transform duration-300 origin-left"></span>
-                                </a> -->
+                                </a>
                                 
                                 <a href="/about" class="group font-display text-sm font-semibold ${isActive('about') ? 'text-brand-dark' : 'text-brand-dark/60 hover:text-brand-dark'} transition-colors duration-300 relative py-1">
                                     <span>About Us</span>
