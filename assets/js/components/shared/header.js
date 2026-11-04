@@ -126,12 +126,10 @@ export class AppHeader extends BaseComponent {
                                     <span class="group-hover:text-brand-gold transition-colors duration-200">Home</span>
                                     <span class="text-brand-gold ${isActive('home') ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-2'} group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-200">&rarr;</span>
                                 </a>
-
-                                <a href="/case-studies" class="group font-display text-sm font-semibold ${isActive('case-studies') ? 'text-brand-dark' : 'text-brand-dark/60 hover:text-brand-dark'} transition-colors duration-300 relative py-1">
-                                    <span>Case Studies</span>
-                                    <span class="absolute bottom-0 left-0 w-full h-0.5 bg-brand-gold transform ${isActive('case-studies') ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100'} transition-transform duration-300 origin-left"></span>
+                                <a href="/case-studies" @click="mobileMenuOpen = false" class="group flex items-center justify-between rounded-sm px-3 py-2.5 text-base font-semibold font-display ${isActive('about') ? 'text-brand-gold bg-brand-dark/5' : 'text-brand-dark/70 hover:bg-brand-dark/5'} transition-all duration-200">
+                                    <span class="group-hover:text-brand-gold transition-colors duration-200">Case Studies</span>
+                                    <span class="text-brand-gold ${isActive('about') ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-2'} group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-200">&rarr;</span>
                                 </a>
-
                                 <a href="/about" @click="mobileMenuOpen = false" class="group flex items-center justify-between rounded-sm px-3 py-2.5 text-base font-semibold font-display ${isActive('about') ? 'text-brand-gold bg-brand-dark/5' : 'text-brand-dark/70 hover:bg-brand-dark/5'} transition-all duration-200">
                                     <span class="group-hover:text-brand-gold transition-colors duration-200">About Us</span>
                                     <span class="text-brand-gold ${isActive('about') ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-2'} group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-200">&rarr;</span>
